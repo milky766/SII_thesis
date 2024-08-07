@@ -1,0 +1,144 @@
+\subsection{PARAMETER IDENTIFICATION EXPERIMENT}
+Fig. \ref{fig:static_equipment} is an outline diagram of the static loading experiment to identify the parameters $m$, $k$, and $a_i$ .
+Table \ref{tab:PAM} shows the shapes and materials of the used four PAMs.
+The experimental procedure was as follows.
+First, the pressure $p$ was adjusted to a constant level.
+Taking into account the strength of the materials, the pressure of PAM-A, PAM-B, or PAM-C was adjusted to $0.4\si{MPa}$, $0.5\si{MPa}$, $0.6\si{MPa}$, $0.7\si{MPa}$ or $0.8\si{MPa}$, while the pressure of PAM-D was $0.2\si{MPa}$, $0.3\si{MPa}$, $0.4\si{MPa}$, $0.5\si{MPa}$, or $0.6\si{MPa}$.
+Next, the PAM was gradually stretched from the natural length by approximately $2.5\si{mm}$ increments and the deformation $d$, the force $f$, and the pressure $p$ were measured at each point.
+Each value was stabilized by waiting for at least 2 seconds after deformation.
+Once $d$ reached its maximum value predetermined based on each PAM's strength, it was contracted to the natural length $l_n$ by approximately $2.5\si{mm}$ decrements, and $d$, $p$, and $f$ were measured again at each point.
+Finally, the parameters $m$, $k$, and $a_i$ were calculated by the least squares method.
+
+\begin{table}[h]
+     \centering
+     \caption{The Characteristics of the experimented PAMs}
+     \begin{tabular}{c|ccccc}
+         \hline
+         PAM & Length [$\si{cm}$] & Diameter [$\si{mm}$] & bladder Material\\
+         \hline \hline
+         A & 21.6 & 19.9 &  Rubber \\
+         B &21.1  & 13.4 &  Rubber \\
+         C & 14.1 & 13.4 &  Rubber \\
+         D & 21.2 & 19.0 & Silicon \\
+         \hline
+     \end{tabular}
+ \label{tab:PAM}
+ \end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\columnwidth]{fig/static_experiment.pdf}
+    \caption{Outline diagram of the static loading experiment}
+    \label{fig:static_equipment}
+ \end{figure}
+
+\subsection{ERROR EVALUATION EXPERIMENT}
+We dynamically estimated the length of the four different PAMs to verify the general applicability of the model.
+The jig holding the left end of the PAM in Fig. \ref{fig:static_equipment} was removed and a pulley was installed in its place. A proportional control valve was installed between the pressure sensor and the compressor.
+The experiment procedure was as follows. First, a weight of either $5\si{kg}$ or $10\si{kg}$ was connected to the PAM via the pulley to apply a constant force $f$. Next, considering the strength of each PAM, the pressure $p [\si{MPa}]$ was varied over time $t [\si{s}]$ by the proportional control valve according to 
+\begin{equation}
+p = 0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.6
+\label{eq:Pref}
+\end{equation}
+for PAM-A, PAM-B, and PAM-C, and
+\begin{equation}
+p = 0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.4
+\label{eq:Prefd}
+\end{equation}
+for PAM-D. At each time, $f$, $p$, and the length $l$ were measured. 
+Finally, the errors were calculated between the measured and estimated $l$.
+
+% Figure \ref{fig:dynamic_equipment} is an outline diagram of the experiment to verify the effectiveness of the proposed model by measuring the error when dynamically estimating the length of the PAMs using the acquired parameters. The experimental procedure is as follows: first, a weight of either $5\si{kg}$ or $10\si{kg}$ was connected to the PAMs via a pulley to apply a constant force $F$. Next, considering the strength of each PAM, the pressure $P [\si{MPa}]$ was 
+% trigonometrically varied over time $t [\si{s}]$ by a proportional control valve (PCV) according to: 
+% \begin{equation}
+% P = 0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.6
+% \label{eq:Pref}
+% \end{equation}
+% for PAM-A, PAM-B, and PAM-C, and:
+% \begin{equation}
+% P = 0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.4
+% \label{eq:Prefd}
+% \end{equation}
+% for PAM-D. At each time, $F$, $P$, and the length $L$ of the PAMs were measured. 
+% Finally, the errors were calculated between the measured and estimated $L$.
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=\columnwidth]{fig/dynamic_experiment.pdf}
+%     \caption{OUTLINE DIAGRAM OF THE DYNAMIC ESTIMATION EXPERIMENT}
+% \label{fig:dynamic_equipment}
+% \end{figure}
+
+
+% \subsection{動的測定実験}
+% 図\ref{fig:dnyamic_equipment}は，取得したパラメータを使用して動的に空気圧人工筋の長さを推定したときの
+% 誤差を測定し,提案モデルの有効性を検証する実験の概略図である．実験の手順は次の通りである．
+% まず，$5\si{kg}$もしくは$10\si{kg}$のウェイトをプーリーを介して空気圧人工筋に接続し，一定の張力をかけた．
+% 次に，材料の強度を考慮して，比例制御弁により圧力$P[\si{MPa}]$を，
+% PAM-A,PAM-B,PAM-Cに対しては，
+% \begin{equation}
+%   P =  0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.6 
+% \label{eq:Pref}
+% \end{equation}
+% と，PAM-Dに対しては，
+% \begin{equation}
+%   P =  0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.4
+% \label{eq:Prefd}
+% \end{equation}
+% と時間$t[\si{s}]$に対して動的に変化させ，各時刻の空気圧人工筋の全長$L$,張力$F$および圧力$P$の値を測定した．
+% 最後に，全長$L$の推定値と測定値から誤差を計算した.
+
+
+
+
+
+%\begin{table}[h]
+%     \centering
+%     \caption{The Characteristics of the experimented PAMs}
+%     \begin{tabular}{c|ccccc}
+%         \hline
+%         空気圧人工筋 & 長さ [$\si{cm}$] & 直径 [$\si{mm}$] & 嚢構造の材料 \\
+%         \hline \hline
+%         PAM-A & 21.6 & 19.9 & 天然ゴム \\
+%         PAM-B &21.1  & 13.4 & 天然ゴム \\
+%         PAM-C & 14.1 & 13.4 & 天然ゴム \\
+%         PAM-D & 21.2 & 19.0 & シリコン \\
+%         \hline
+%     \end{tabular}
+%     \label{tab:PAM}
+% \end{table}
+
+% \begin{figure}[h]
+%    \centering
+%    \includegraphics[width=\columnwidth]{fig/static_experiment.pdf}
+%    \caption{Outline diagram of the parameter identification \\experiment}
+%    \label{fig:static_equipment}
+% \end{figure}
+
+% \subsection{動的測定実験}
+% 図\ref{fig:dnyamic_equipment}は，取得したパラメータを使用して動的に空気圧人工筋の長さを推定したときの
+% 誤差を測定し,提案モデルの有効性を検証する実化の概略図である．実験の手順は次の通りである．
+% まず，$5\si{kg}$もしくは$10\si{kg}$のウェイトをプーリーを介して空気圧人工筋に接続し，一定の張力をかけた．
+% 次に，材料の強度を考慮して，比例制御弁により圧力$P[\si{MPa}]$を，
+% PAM-A,PAM-B,PAM-Cに対しては，
+% \begin{equation}
+%   P =  0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.6 
+% \label{eq:Pref}
+% \end{equation}
+% と，PAM-Dに対しては，
+% \begin{equation}
+%   P =  0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.4
+% \label{eq:Prefd}
+% \end{equation}
+% と時間$t[\si{s}]$に対して動的に変化させ，各時刻の空気圧人工筋の全長$L$,張力$F$および圧力$P$の値を測定した．
+% 最後に，全長$L$の推定値と測定値から誤差を計算した.
+
+% \begin{figure}[h]
+%    \centering
+%    \includegraphics[width=\columnwidth]{fig/dynamic_experiment.pdf}
+%    \caption{Outline diagram of the error measurement \\experiment}
+%    \label{fig:dnyamic_equipment}
+% \end{figure}
+
+% 続いて,図1でPAMの左端を固定しているジグを外し,プーリーを設置した.また,圧力センサとコンプレッサの間に比例制御弁(PCV)を設置した.
+% 5kgもしくは10kgのウェイトを空気圧人工筋に接続し,一定の張力$F$をかける負荷実験により,取得した推定パラメータの有効性を検証した.
