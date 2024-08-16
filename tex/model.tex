@@ -1,0 +1,51 @@
+Regarding a PAM as a spring\cite{spring}, its length is expressed as the sum of a natural length and a deformation 
+\begin{equation}
+   l = l_n + d
+\label{eq:estimation}
+\end{equation}
+where $l$ is the PAM length, $l_n$ is the natural length, defined as the length without external force at pressure $p$, and $d$ is the deformation from the natural length, respectively.
+ 
+Assuming that $l_n$ is a linear function of $p$ within a certain pressure range, it can be given as 
+\begin{equation}
+l_n = mp + h
+\label{eq:L_n}
+\end{equation}
+where $m$ and $h$ can be determined by a static loading experiment.
+ 
+Introducing the PAM's nonlinearity into the spring and assuming that the spring constant is the function of $p$\cite{spring}, the force $f$ is given by
+\begin{equation}
+\label{eq:model}
+f = (a_3pd + a_2p + a_1d + a_0)d
+\end{equation}
+The terms $pd^2$ and $d^2$ can be found in Chou et al.'s fundamental model\cite{chouMeasurementModelingMcKibben1996}, which capture the essential dynamic properties of the PAM. The term $pd$  comes from Tondu et al.'s model\cite{ModelingControl} to more accurately reflect differences in the shape of the PAM. The term $d$ is added based on Ferraresi et al.'s model\cite{Comparison} to account for differences in material. The constants $a_0 \sim a_3$ in Eq. (\ref{eq:model}) are determined by the static loading experiment. Based on the $a_0 \sim a_3$, $d$  can be calculated from the measured $p$ and $f$ by solving Eq. (\ref{eq:model}).
+
+
+
+% Here, the degree of the non-linear spring constant is determined with reference to the prior models. by Chou et al.based on the geometric structure of the sleeve\cite{chouMeasurementModelingMcKibben1996}, the model by Tondu et al. derived from the principle of virtual work\cite{ModelingControl}, and the model by Ferraresi et al. evaluating stress within material\cite{Comparison}. 
+
+%ここの次数の話はしっかりと展開を考える.
+%場合によっては次数を変える.
+%
+
+
+% 人工筋全体の長さ$L$は,人工筋内の空気圧によって決まる自然長$L_n$と,外力による自然長からの伸び$L_d$によって,
+% \begin{equation} 
+%   L = L_n + L_d
+% \label{eq:estimation}
+% \end{equation}
+% と表される.ただし，自然長$L_n$は,圧力$P$における人工筋の無負荷の長さとして定義される．
+% 自然長$L_n$は,一定の圧力範囲では圧力$P$の線形な関数であるとして,
+% \begin{equation}
+%   L_n = mP + k
+% \label{eq:L_n}
+% \end{equation}
+% と表せると仮定する.(\ref{eq:L_n})式における定数$m$，$k$は,人工筋に圧縮空気を供給して測定した長さのデータに
+% 最小二乗法を適用することで計算される.
+% また,人工筋が非線形のバネであると\cite{spring}して,張力$F$が伸び$L_d$に非線形バネ定数をかけた
+% \begin{equation}
+% \label{eq:model}
+% F = (a_3P^2 + a_2PL_d + a_1L^2_s + a_0)L_d
+% \end{equation}
+% のように表されると仮定する.
+% ここで,非線形バネ定数の次数は,スリーブの幾何学的構造に基づくChouらのモデル\cite{chouMeasurementModelingMcKibben1996},
+% 仮想仕事の原理から導出したTonduらによるモデル\cite{ModelingControl}および材料内部の応力を評価したFerraresiらによるモデル\cite{Comparison}のモデル式の次数を参考に定めた.(\ref{eq:model})式の定数$a_0 \sim a_3$を負荷実験により取得したデータに最小二乗法を適用することで決定することで,圧力$P$,張力$F$から伸び$L_d$を推定することができる.

@@ -1,0 +1,84 @@
+\documentclass[conference,a4paper,final]{IEEEtran}
+\usepackage[dvipdfmx]{graphicx}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage{here}
+\usepackage{multicol}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{{
+%   \fontsize{20}{\baselineskip}\selectfont 
+%Length estimation of pneumatic artificial muscles \\using pressure-dependent nonlinear spring model}
+Length estimation of pneumatic artificial muscles \\for stretch reflex of musculoskeletal robots}
+\thanks{This work was supported by JSPS KAKENHI Grant Number JP23K18494}
+}
+
+
+\author{\IEEEauthorblockN{Mizuki Yoshida}
+\IEEEauthorblockA{\textit{Department of Mechanical Engineering and Science} \\
+\textit{Graduate School of Engineering, Kyoto University}\\
+Kyoto, Japan \\
+yoshida.mizuki.68s@st.kyoto-u.ac.jp}
+\and
+\IEEEauthorblockN{Koh Hosoda}
+\IEEEauthorblockA{\textit{Department of Mechanical Engineering and Science} \\
+\textit{Graduate School of Engineering, Kyoto University}\\
+Kyoto, Japan \\
+hosoda.koh.7p@kyoto-u.ac.jp}
+}
+
+\maketitle
+
+
+\begin{abstract}
+This paper introduces an experimental model designed to estimate the length of a pneumatic artificial muscle (PAM) by measuring pressure and force. We model the PAM as a nonlinear spring with a spring constant that is a function of deformation and pressure. The model structure has physical bases in prior research, and its coefficients are derived from static experiments that measure pressure, force, and length. We apply this model to estimate the length of four distinct PAMs, each varying in materials and shapes using data from pressure and force sensors. This approach is advantageous for controlling musculoskeletal robots offering a practical alternative for length estimation of the muscles.
+\end{abstract}
+
+%具体体な数字の部分はカットして,将来の見込や応用,改善点をいうほうがいいかも
+
+\begin{IEEEkeywords}
+length estimation, pneumatic artificial muscle, reflex, musculoskeletal robot
+\end{IEEEkeywords}
+
+\input{tex/custom_macro.tex}
+
+\section{INTRODUCTION}
+\input{tex/introduction.tex}
+
+\section{MODEL PROPOSAL FOR LENGTH ESTIMATION}
+\input{tex/model.tex}
+
+\section{EXPERIMENTAL METHOD}
+\input{tex/method.tex}
+
+\section{LENGTH ESTIMATION RESULT}
+\input{tex/result.tex}
+
+\section{DISCUSSION}
+\input{tex/discussion.tex}
+
+% \section{SUMMARY}
+% \input{tex/conclusion.tex}
+
+% \section*{ACKNOWLEDGEMENT}
+% \input{tex/acknowledgment.tex}
+
+
+\clearpage
+
+\footnotesize
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,bookmark}
+
+\end{document}

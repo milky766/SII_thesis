@@ -1,0 +1,27 @@
+The model offers a practical alternative to length sensors, contributing to greater flexibility in robot design.
+
+この表現を使うと必ずセンサの情報を載せなきゃいけないからやめたほうがいいかも
+センサで実験が必要なのは、reachingとreflexの2つ
+
+
+
+ファイバセンサでのreaching実験とreflex実験もするべきだろう（レビュワーに一番言われていたことだし）
+
+移動平均（フィルター）の話もmethodのところで話すべき
+
+フォースゲージが緩むと長さ推定の精度が悪くなる点は触れるべき。ただし、これは反射機構を実現するという意味では問題にならない。
+筋の全体の長さを常に監視しておくという意味ではdisadvantageになる。
+
+discussion
+1.error evaluation（今のまま）
+2.reaching task（材料の違い）
+3.reflex （ファイバーセンサとの比較）
+
+の三本立てで書く
+
+resultの
+
+完成したらchatgptで文章チェック
+
+- discussion should be better framed on highlighting the value of the results and comparing them with existing solutions.
+errors are provided as percentage, but it is not clear with respect to what. Please, clarify.

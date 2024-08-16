@@ -1,0 +1,170 @@
+\documentclass[letterpaper, 10 pt, conference]{IEEEconf}
+\usepackage[dvipdfmx]{graphicx}
+\IEEEoverridecommandlockouts
+\overrideIEEEmargins                                      % Needed to meet printer requirements.
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage{here}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{layout} % レイアウトを確認するためのパッケージ
+
+
+\usepackage[absolute,overlay]{textpos} % 絶対位置指定のためのパッケージ
+\setlength{\TPHorizModule}{1cm} % 横方向の単位を1cmに設定
+\setlength{\TPVertModule}{1cm}  % 縦方向の単位を1cmに設定
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+%In case you encounter the following error:
+%Error 1010 The PDF file may be corrupt (unable to open PDF file) OR
+%Error 1000 An error occurred while parsing a contents stream. Unable to analyze the PDF file.
+%This is a known problem with pdfLaTeX conversion filter. The file cannot be opened with acrobat reader
+%Please use one of the alternatives below to circumvent this error by uncommenting one or the other
+%\pdfobjcompresslevel=0
+%\pdfminorversion=4
+
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+
+\title{\LARGE \bf
+Length Estimation of Pneumatic Artificial Muscles \\for Stretch Reflex of Musculoskeletal Robots*}
+
+\author{Mizuki Yoshida$^{**}$, Wang Junqi$^{**}$ and Koh Hosoda$^{**}$% <-this % stops a space
+\thanks{*This work was supported by JSPS KAKENHI Grant Number JP23K18494}% <-this % stops a space
+\thanks{$^{**}$Mizuki Yoshida, Wang Junqi and Koh Hosoda are with Department of Mechanical Engineering and Science, Graduate School of Engineering, Kyoto University, Kyoto, Japan
+{\tt\small email:yoshida.mizuki.68s@st.kyoto-u.ac.jp, wang.junqi.77a@st.kyto-u.ac.jp, hosoda.koh.7p@kyoto-u.ac.jp}
+ }
+}
+
+
+% \title{\LARGE \bf
+% Length estimation of pneumatic artificial muscles \\for stretch reflex of musculoskeletal robots*}
+
+% \author{Mizuki Yoshida$^{**}$, Wang Junqi$^{**}$ and Koh Hosoda$^{**}$% <-this % stops a space
+% \thanks{*This work was supported by JSPS KAKENHI Grant Number JP23K18494}% <-this % stops a space
+% \thanks{\parbox{\textwidth}{$^{**}$Mizuki Yoshida, Wang Junqi and Koh Hosoda are with Department of Mechanical Engineering and Science, Graduate School of Engineering, Kyoto University, Kyoto, Japan. \\
+% \texttt{yoshida.mizuki.68s@st.kyoto-u.ac.jp, wang.junqi.77a@st.kyoto-u.ac.jp, hosoda.koh.7p@kyoto-u.ac.jp}}}}
+
+
+% \protect\newline
+% Email: {\tt yoshida.mizuki.68s@st.kyoto-u.ac.jp},
+% {\tt wang.junqi.87r@st.kyoto-u.ac.jp},
+% {\tt hosodakoh.7p@kyoto-u.ac.jp}}
+
+% \title{\LARGE \bf
+% Preparation of Papers for IEEE Sponsored Conferences \& Symposia*
+% }
+
+
+% \author{Albert Author$^{1}$ and Bernard D. Researcher$^{2}$% <-this % stops a space
+% \thanks{*This work was not supported by any organization}% <-this % stops a space
+% \thanks{$^{1}$Albert Author is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+%         University of Twente, 7500 AE Enschede, The Netherlands
+%         {\tt\small albert.author@papercept.net}}%
+% \thanks{$^{2}$Bernard D. Researcheris with the Department of Electrical Engineering, Wright State University,
+%         Dayton, OH 45435, USA
+%         {\tt\small b.d.researcher@ieee.org}}%
+% }
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+This paper introduces an experimental model designed to estimate the length of a pneumatic artificial muscle (PAM) from pressure and force. We model the PAM as a nonlinear spring with a spring constant dependent on deformation and pressure. The model structure has physical bases in prior research, and its coefficients are derived from static loading experiments that measure pressure, force, and length. We apply this model to estimate the length of four distinct PAMs, each varying in materials and shapes. When used in an antagonistic-muscles-driven arm, the model turned out to be effective in monitoring changes in PAM length velocity and triggering a stretch reflex, enhancing the robot's adaptability to disturbances.  The model offers a practical alternative to length sensors, contributing to greater flexibility in robot design.
+
+% This paper introduces an experimental model designed to estimate the length of a pneumatic artificial muscle (PAM) by measuring pressure and force. We model the PAM as a nonlinear spring with a spring constant that is a function of deformation and pressure. The model structure has physical bases in prior research, and its coefficients are derived from static loading experiments that measure pressure, force, and length. We apply this model to estimate the length of four distinct PAMs, each varying in materials and shapes using data from pressure and force sensors. This approach is advantageous for controlling musculoskeletal robots offering a practical alternative for length estimation of the muscles.
+
+%実際にこのモデルを拮抗筋駆動のアームに適用し、PAMの長さの変化速度を監視することで、人間のような伸張反射をトリガーさせ、外乱への適応性を向上させるのに有利であることもわかった.
+
+
+\end{abstract}
+
+
+\input{tex/custom_macro.tex}
+
+\section{INTRODUCTION}
+\input{tex/introduction.tex}
+
+\section{MODEL FOR LENGTH ESTIMATION}
+\input{tex/model.tex}
+
+\section{EXPERIMENTAL METHOD}
+\input{tex/method.tex}
+
+\section{RESULT}
+\input{tex/result.tex}
+
+\section{DISCUSSION}
+\input{tex/discussion.tex}
+
+
+
+ \footnotesize
+% % \bibliographystyle{IEEEconf}
+% \bibliography{bookmark}
+% \bibliography{bookmark}
+
+\begin{thebibliography}{99}
+
+    \bibitem{rus_design_2015} D. Rus and M. T. Tolley, "Design, Fabrication and Control of Soft Robots," \textit{Nature}, vol. 521, pp. 467--475, 2015.
+    
+    \bibitem{Compac} H. Sato, K. Uchiyama, Y. Mano, F. Ito, S. Kurumaya, M. Okui, Y. Yamada, and T. Nakamura, "Development of a Compact Pneumatic Valve Using Rotational Motion for a Pneumatically Driven Mobile Robot With Periodic Motion in a Pipe," \textit{IEEE Access}, vol. 9, pp. 165271-165285, 2021.
+    
+    \bibitem{polygerinos_soft_2015} P. Polygerinos, Z. Wang, K. C. Galloway, R. J. Wood, and C. J. Walsh, "Soft Robotic Glove for Combined Assistance and At-Home Rehabilitation," \textit{Robotics and Autonomous Systems}, vol. 73, pp. 135--143, 2015.
+    
+    \bibitem{hosoda} K. Hosoda, S. Sekimoto, Y. Nishigori, S. Takamuku, and S. Ikemoto, "Anthropomorphic Muscular–Skeletal Robotic Upper Limb for Understanding Embodied Intelligence," \textit{Advanced Robotics}, vol. 26, no. 7, pp. 729--744, 2012.
+    
+    \bibitem{marchese_autonomous} A. D. Marchese, C. D. Onal, and D. Rus, "Autonomous Soft Robotic Fish Capable of Escape Maneuvers Using Fluidic Elastomer Actuators," \textit{Soft Robotics}, vol. 1, no. 1, pp. 75--87, Mar. 2014.
+    
+    \bibitem{mirvakili_artificial} S. M. Mirvakili and I. W. Hunter, "Artificial Muscles: Mechanisms, Applications, and Challenges," \textit{Advanced Materials}, vol. 30, no. 6, 2018.
+    
+    \bibitem{Dynamic} D. B. Reynolds, D. W. Repperger, C. A. Phillips, and G. Bandry, "Modeling the Dynamic Characteristics of Pneumatic Muscle," \textit{Annals of Biomedical Engineering}, vol. 31, no. 3, pp. 310--317, 2003.
+    
+    \bibitem{SDCharacteristics} C.-P. Chou and B. Hannaford, "Static and Dynamic Characteristics of McKibben Pneumatic Artificial Muscles," in \textit{Proceedings of the 1994 IEEE International Conference on Robotics and Automation}, pp. 281--286, IEEE Comput. Soc. Press, 1994.
+    
+    \bibitem{ashwin_survey_2018} K. P. Ashwin and A. Ghosal, "A Survey on Static Modeling of Miniaturized Pneumatic Artificial Muscles With New Model and Experimental Results," \textit{Applied Mechanics Reviews}, vol. 70, no. 4, 2018.
+    
+    \bibitem{takahashi} R. Takahashi, Y. Wang, J. Wang, Y. Jiang, and K. Hosoda, "Implementation of Basic Reflex Functions on Musculoskeletal Robots Driven by Pneumatic Artificial Muscles," \textit{IEEE Robotics and Automation Letters}, vol. 8, no. 4, pp. 1920--1926, 2023.
+    
+    \bibitem{kandel} E. R. Kandel, J. H. Schwartz, T. M. Jessell, S. Siegelbaum, A. J. Hudspeth, S. Mack et al., \textit{Principles of Neural Science}. McGraw-Hill, New York, 2000, vol. 4.
+    
+    \bibitem{nakajima} R. Sakurai, M. Nishida, H. Sakurai, Y. Wakao, N. Akashi, Y. Kuniyoshi, Y. Minami, and K. Nakajima, "Emulating a Sensor Using Soft Material Dynamics: A Reservoir Computing Approach to Pneumatic Artificial Muscle," in \textit{2020 3rd IEEE International Conference on Soft Robotics (RoboSoft)}, pp. 710--717, 2020.
+    
+    \bibitem{motion} T. Nozaki and T. Noritsugu, "Motion Analysis of McKibben Type Pneumatic Rubber Artificial Muscle with Finite Element Method," \textit{International Journal of Automation Technology}, vol. 8, pp. 147--158, 2014.
+    
+    \bibitem{spring} K. C. Wickramatunge and T. Leephakpreeda, "Empirical Modeling of Dynamic Behaviors of Pneumatic Artificial Muscle Actuators," \textit{ISA Transactions}, vol. 52, no. 6, pp. 825--834, 2013.
+    
+    \bibitem{chouMeasurementModelingMcKibben1996} C.-P. Chou and B. Hannaford, "Measurement and Modeling of McKibben Pneumatic Artificial Muscles," \textit{IEEE Transactions on Robotics and Automation}, vol. 12, no. 1, pp. 90--102, 1996.
+    
+    \bibitem{ModelingControl} B. Tondu and P. Lopez, "Modeling and Control of McKibben Artificial Muscle Robot Actuators," \textit{IEEE Control Systems}, vol. 20, no. 2, pp. 15--38, 2000.
+    
+    \bibitem{Comparison} W. F. Carlo Ferraresi and A. Manuello, "Flexible Pneumatic Actuators: A Comparison between The McKibben and the Straight Fibres Muscles," \textit{Journal of Robotics and Mechatronics}, vol. 13, no. 1, pp. 56--63, 2001.
+
+    \bibitem{wheatstone} K. Hoffmann, "Applying the Wheatstone Bridge Circuit," HMB Germany, 1974.
+    
+    \end{thebibliography}
+    
+
+    
+
+\end{document}
