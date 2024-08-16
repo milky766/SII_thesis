@@ -1,4 +1,4 @@
-To improve length estimation accuracy, we expanded Eq. (\ref{eq:model}) by adding the terms $p^2$ and $d^2$ and increasing the parameters as follows
+To improve length estimation accuracy, we expanded Eq. (\ref{eq:model}) by adding the terms $p^2$ and $d^2$ and increasing the parameters as follows:
 \begin{equation}
 \label{eq:model_2d(1)}
 F = (b_5p^2 + b_4pd + b_3d^2 + b_2p+b_1d+b_0)d
@@ -8,7 +8,7 @@ As a result, the dynamic length estimation was achieved with the maximum errors 
 
 % As a result, as shown in the third and fourth columns of Table \ref{tab:error}, the errors were reduced as expected for all PAMs. 
 
-We also tried another approach by introducing a cubic polynomial model and increasing the parameters as follows
+We also tried another approach by introducing a cubic polynomial model and increasing the parameters as follows:
 \begin{equation}
     \label{eq:model_3d}
     F = (c_4p^3+c_3p^2d+c_2pd^2+c_1d^2+c_0)d
@@ -16,7 +16,7 @@ We also tried another approach by introducing a cubic polynomial model and incre
 As predicted, the root mean squared errors decreased to $0.516\%$ for PAM-A, $0.484\%$ for PAM-B, $0.500\%$ for PAM-C, and $0.606\%$ for PAM-D respectively. 
 However, even though the maximum errors decreased to $1.22\%$ for PAM-A and $0.951\%$ for PAM-C respectively, they actually increased to $1.41\%$ for PAM-B and $1.99\%$ for PAM-D respectively. This result suggests that, even if the coefficients of the model equation are determined experimentally, the degrees must be carefully determined based on previous studies so as to express intrinsic characteristics of the PAM. For example, the newly added term $p^3$ may have amplified the error of the pressure sensor. When applying our model to a reflex mechanism, it will also be necessary to carefully consider the contribution of each term to the accuracy of the length estimation based on the reliability of the force and pressure sensors used.
 
-Wickramatunge et al. proposed separating the parameters $a_i$ into contraction ones $a^c_i$ and extension ones $a^e_i$ to reflect the hysteresis of the PAM\cite{spring}. They also suggested using different parameters for low-pressure and high-pressure ranges to further improve the accuracy\cite{spring}. However, our model ignores these suggestions and simplifies the length estimation method by using the same parameters across the entire pressure range, regardless of contraction or expansion. This is because our model is supposed to be applied to the reflex mechanism. If it is necessary to switch the parameters depending on the situation, it would be difficult for the reflex mechanism to respond quickly to disturbances.
+Wickramatunge et al. proposed separating the parameters $a_i$ into contraction ones $a^c_i$ and extension ones $a^e_i$ to reflect the hysteresis of the PAM\cite{spring}. They also suggested using different parameters for low-pressure and high-pressure ranges to further improve the accuracy. However, our model ignores these suggestions and simplifies the length estimation method by using the same parameters across the entire pressure range, regardless of contraction or expansion. This is because our model is supposed to be applied to the reflex mechanism. If the parameters have to be switched depending on the situation, it would be difficult for the reflex mechanism to respond quickly to disturbances.
 % Additionally, since the reflex mechanism is only required to detect sudden extension or contraction of the PAM, a minor decrease in precision is acceptable. 
 % The reflex mechanism aims to reduce the computational load on the central control system, so the computational load ot the reflex mechanism itself must not be high. 
 Musculoskeletal robots often carry microcomputers on their structures, so the employed length estimation method is desired to be simple for efficient operation given the limited computational resources.
