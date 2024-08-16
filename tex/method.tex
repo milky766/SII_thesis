@@ -16,7 +16,7 @@ Next, the PAM was gradually stretched from the natural length by y $2.5\si{mm}$ 
 Each value was stabilized by waiting for at least 2 seconds after deformation.
 Once $d$ reached its maximum value predetermined based on each PAM's strength, it was contracted to the natural length $l_n$ by  $2.5\si{mm}$ decrements, and $d$, $p$, and $f$ were measured again at each point.
 Finally, the parameters $m$, $h$, and $a_i$ were calculated by the least squares method.
-The pressure sensor used was PSE540(SMC Co.), the linear encoder was DS-025(MUTOH INDUSTRIES Co. Ltd.), and the force gauge was FGP-5(Nidec Co.)
+The pressure sensor used was PSE540(SMC Co.), the linear encoder was DS-025(MUTOH INDUSTRIES Co. Ltd.), and the force gauge was FGP-5(Nidec Co.).
 
 \begin{table}[h]
     \centering
@@ -52,12 +52,7 @@ for PAM-D. At each time, $f$, $p$, and the length $l$ were measured.
 Finally, the errors were calculated between the measured and estimated $l$.
 
 \subsection{Reaching Task}
-We conducted an reaching experiment to see the errors when the model is actually incorporated into the stretch reflex mechanism. The system developed by Takahashi et al.\cite{takahashi} was adapted and located in a vertical direction. The system consisted of an arm with a pair of PAMs, an agonist muscle and an antagonist muscle, and the muscles were connected to the arm with fishing line. The force gauge used in the parameter identification experiment was too big to be equipped with the robot arm,so it was replaced with a foil strain gauge (KFP-5-120-C1-65L1M2R, Kyowa Electronic Instrument Co. Ltd.).The reaching movement was performed by linearly increasing the pressure of the agonist muscle from $0.2 \si{MPa}$ to $0.6 \si{MPa}$ while decreasing the pressure of the antagonist muscle from $0.6 \si{MPa}$ to $0.2 \si{MPa}$. During the reaching movement, the length of the PAMSs was measured with the linear encoder while it was estimated by the predetermined parameters $m$,$h$, and $a_i$, and the errors were calculated. The experiment time was $12 \si{s}$, and the sampling frequency was set to 
-
-
-
-
-$100 \si{Hz}$.
+We conducted an reaching experiment to see the errors when the model is actually incorporated into the stretch reflex mechanism. The system developed by Takahashi et al.\cite{takahashi} was adapted and located in a vertical direction. The system consisted of an arm with a pair of PAMs, an agonist muscle and an antagonist muscle, and the muscles were connected to the arm with fishing line. The force gauge used in the parameter identification experiment was too big to be equipped with the robot arm,so it was replaced with a foil strain gauge (KFP-5-120-C1-65L1M2R, Kyowa Electronic Instrument Co. Ltd.).The reaching movement was performed by linearly increasing the pressure of the agonist muscle from $0.2 \si{MPa}$ to $0.6 \si{MPa}$ while decreasing the pressure of the antagonist muscle from $0.6 \si{MPa}$ to $0.2 \si{MPa}$. During the reaching movement, the length of the PAMSs was measured with the linear encoder while it was estimated by the predetermined parameters $m$,$h$, and $a_i$, and the errors were calculated. The experiment time was $12 \si{s}$, and the sampling frequency was set to $100 \si{Hz}$.
 
 During the experiment, the change in resistance of the strain gauges went to a quarter Wheatstone bridge circuit where the three resistors other than the strain gauge were $120 \pm 0.5 \Omega$. Unlike the force gauge, which can directly measure the force of the PAMs, the voltage signal from the circuit was converted to force according to Eq.(\ref{eq:voltage}). Eq.(\ref{eq:voltage}) assumes that the voltage is a linear function of force because the voltage from the Wheatstone bridge circuit is proportional to the strain\cite{wheatstone} and the strain is proportional to the force while the material is elastically deformed.
 \begin{equation}

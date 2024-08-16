@@ -1,3 +1,4 @@
+\subsection{Error Evaluation}
 To improve length estimation accuracy, we expanded Eq. (\ref{eq:model}) by adding the terms $p^2$ and $d^2$ and increasing the parameters as follows:
 \begin{equation}
 \label{eq:model_2d(1)}
@@ -21,7 +22,8 @@ Wickramatunge et al. proposed separating the parameters $a_i$ into contraction o
 % The reflex mechanism aims to reduce the computational load on the central control system, so the computational load ot the reflex mechanism itself must not be high. 
 Musculoskeletal robots often carry microcomputers on their structures, so the employed length estimation method is desired to be simple for efficient operation given the limited computational resources.
 
-
+\subsection{Reaching task}
+\subsection{Stretch Reflex}
 
 % なお,WickramatungeらはPAMのヒステシスをモデルに反映させるために,推定パラメータ$a_i$を収縮時のパラメータ$a^c_i$と膨張時のパラメータ$a^e_i$に分けることを提案している.また,更に精度を向上させるために,低圧帯と高圧帯でもパラメータを使い分けることを提案している.本論文では,これらの提案を無視し,収縮･膨張を問わず全圧力範囲で同一のパラメータを用いることで,長さ推定の手法を単純化している.これは,本モデルによるPAMの長さ推定を反射機構に適用することを想定しているからである.推定パラメータを状況により切り替える必要があると,反射機構が外乱に迅速に反応することが困難になる.また,反射機構にはPAMの突然の伸長もしくは収縮を検知することだけが求められているので,PAMの精密な制御に求められるような高精度さは必要ないと考える.反射機構は中央制御系の計算負荷を軽減することを目的とするため,反射機構の計算負荷自体が高くてはならない.特に,筋骨格ロボットにはマイクロコンピュータを搭載することも多いため,計算資源の限られた環境での実行を考慮して,モデルを単純化している.
  

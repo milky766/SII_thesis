@@ -1,11 +1,7 @@
-The model offers a practical alternative to length sensors, contributing to greater flexibility in robot design.
+modelとsensorによるreflexが純粋に比較できない点は言及しておくべき（thresholdやgainの設定が実験的にされているから。それに、フィルターもかけているし）
 
-この表現を使うと必ずセンサの情報を載せなきゃいけないからやめたほうがいいかも
-センサで実験が必要なのは、reachingとreflexの2つ
+angle sensorのdegreeの向きには言及する
 
-
-
-ファイバセンサでのreaching実験とreflex実験もするべきだろう（レビュワーに一番言われていたことだし）
 
 移動平均（フィルター）の話もmethodのところで話すべき
 
@@ -14,12 +10,13 @@ The model offers a practical alternative to length sensors, contributing to grea
 
 discussion
 1.error evaluation（今のまま）
-2.reaching task（材料の違い）
-3.reflex （ファイバーセンサとの比較）
+2.reaching task（材料の違い←材料によって信号がブレるのは当たり前すぎる話だし、本題からずれるから書くべきじゃない気がする）
+そもそも、使っているひずみゲージはプラスチック専用だし）
+3.reflex （ファイバーセンサとの比較,センサのoverstretch現象にもここで触れる（コレは伸張反射をするうえで弱点になりうる）
 
-の三本立てで書く
 
-resultの
+
+
 
 完成したらchatgptで文章チェック
 
