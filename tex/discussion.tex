@@ -4,7 +4,7 @@ To improve length estimation accuracy, we expanded Eq. (\ref{eq:model}) by addin
 \label{eq:model_2d(1)}
 F = (b_5p^2 + b_4pd + b_3d^2 + b_2p+b_1d+b_0)d
 \end{equation}
-As a result, the dynamic length estimation was achieved with the maximum errors of $1.12\%$ for PAM-A, $0.773\%$ for PAM-B, $1.01\%$ for PAM-B, and $0.755\%$ for PAM-D respectively, and with the root mean squared errors of $0.633\%$ for PAM-A, $0.353\%$ for PAM-B, $0.548\%$ for PAM-C, and $0.435\%$ for PAM-D respectively. The errors were reduced as expected for all PAMs. 
+As a result, with respect to the measurements by the linear encoder,the dynamic length estimation was achieved with the maximum errors of $1.12\%$ for PAM-A, $0.773\%$ for PAM-B, $1.01\%$ for PAM-B, and $0.755\%$ for PAM-D respectively, and with the root mean squared errors of $0.633\%$ for PAM-A, $0.353\%$ for PAM-B, $0.548\%$ for PAM-C, and $0.435\%$ for PAM-D respectively. The errors were reduced as expected for all PAMs. 
 % As a result, the dynamic length estimation was achieved with maximum errors within $1.12\%$ and mean squared error rates within $0.633\%$, and the errors were reduced as expected for all PAMs. 
 
 % As a result, as shown in the third and fourth columns of Table \ref{tab:error}, the errors were reduced as expected for all PAMs. 
@@ -17,13 +17,84 @@ We also tried another approach by introducing a cubic polynomial model and incre
 As predicted, the root mean squared errors decreased to $0.516\%$ for PAM-A, $0.484\%$ for PAM-B, $0.500\%$ for PAM-C, and $0.606\%$ for PAM-D respectively. 
 However, even though the maximum errors decreased to $1.22\%$ for PAM-A and $0.951\%$ for PAM-C respectively, they actually increased to $1.41\%$ for PAM-B and $1.99\%$ for PAM-D respectively. This result suggests that, even if the coefficients of the model equation are determined experimentally, the degrees must be carefully determined based on previous studies so as to express intrinsic characteristics of the PAM. For example, the newly added term $p^3$ may have amplified the error of the pressure sensor. When applying our model to a reflex mechanism, it will also be necessary to carefully consider the contribution of each term to the accuracy of the length estimation based on the reliability of the force and pressure sensors used.
 
-Wickramatunge et al. proposed separating the parameters $a_i$ into contraction ones $a^c_i$ and extension ones $a^e_i$ to reflect the hysteresis of the PAM\cite{spring}. They also suggested using different parameters for low-pressure and high-pressure ranges to further improve the accuracy. However, our model ignores these suggestions and simplifies the length estimation method by using the same parameters across the entire pressure range, regardless of contraction or expansion. This is because our model is supposed to be applied to the reflex mechanism. If the parameters have to be switched depending on the situation, it would be difficult for the reflex mechanism to respond quickly to disturbances.
+Wickramatunge et al. proposed separating the parameters $a_i$ into contraction ones $a^c_i$ and extension ones $a^e_i$ to reflect the hysteresis of the PAM\cite{spring}. They also suggested using different parameters for low-pressure and high-pressure ranges to further improve the accuracy. However, our model ignores these suggestions and simplifies the length estimation method by using the same parameters across the entire pressure range, regardless of contraction or expansion. This is because our model is supposed to be applied to the reflex 
+
+% \begin{figure}[H]
+%     \hfill
+%     \begin{minipage}{\columnwidth}
+%         \centering
+%         \includegraphics[width=\columnwidth]{fig/reaching_error.pdf} 
+%         \caption{Relationship between Pressure and Natural Length}
+%         \label{fig:length_pressure}
+%         \vspace{1em} 
+%         \includegraphics[width=\columnwidth]{fig/time_vs_angle_model_sensor.pdf}
+%         \caption{Relationship between Force and Deformation at Each Pressure (PAM-B)}
+%         \label{fig:pam_b_static1}
+%     \end{minipage}
+%     \hspace{0.05\textwidth} 
+% \end{figure}
+
+\begin{figure*}[t]
+    \centering
+    \begin{minipage}[H]{\textwidth} % 全幅を使用
+        \begin{minipage}[H]{0.48\textwidth} % 左側の半分
+            \centering
+            \includegraphics[width=\columnwidth]{fig/reaching_error.pdf}
+            \caption{Length Estimation Error in Reaching Task}
+            \label{fig:reaching_error}
+            \vspace{1em}
+            \includegraphics[width=\columnwidth]{fig/time_vs_angle_model_sensor.pdf}
+            \caption{Comparison of Reflex Angles between Model and Fiber Sensor }
+            \label{fig:reflex_angle}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[H]{0.48\textwidth} % 右側の半分
+            \centering
+            \includegraphics[width=\columnwidth]{fig/20240819_r20_reflex_all_plt.pdf}
+            \caption{Dynamic Reflex Behavior of Agonist and Antagonist Muscles}
+            \label{fig:reflex_all}
+        \end{minipage}
+    \end{minipage}
+\end{figure*}
+
+\noindent mechanism. If the parameters have to be switched depending on the situation, it would be difficult for the reflex mechanism to respond quickly to disturbances.
 % Additionally, since the reflex mechanism is only required to detect sudden extension or contraction of the PAM, a minor decrease in precision is acceptable. 
 % The reflex mechanism aims to reduce the computational load on the central control system, so the computational load ot the reflex mechanism itself must not be high. 
 Musculoskeletal robots often carry microcomputers on their structures, so the employed length estimation method is desired to be simple for efficient operation given the limited computational resources.
 
+
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=\columnwidth]{fig/20240819_r20_reflex_all_plt.pdf}
+%     \caption{Outline Diagram of Static Loading Experiment}
+%     \label{fig:static_equipment}
+%  \end{figure}
+
+% \begin{figure*}[t] % figure* は twocolumn の場合、2カラム全体を使う
+%     \centering
+%     \begin{minipage}[t]{\columnwidth}
+%         \centering
+%         \includegraphics[width=\columnwidth]{fig/reaching_error.pdf}
+%         \vspace{0.3cm}
+%         \includegraphics[width=\columnwidth]{fig/time_vs_angle_model_sensor.pdf}
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}[t]{\columnwidth}
+%         \centering
+%         \includegraphics[width=\columnwidth]{fig/20240819_r20_reflex_all_plt.pdf}
+%     \end{minipage}
+%     \caption{a}
+%     \label{fig:plots}
+% \end{figure*}
+
+
+
 \subsection{Reaching task}
 \subsection{Stretch Reflex}
+
+\newpage
+
 
 % なお,WickramatungeらはPAMのヒステシスをモデルに反映させるために,推定パラメータ$a_i$を収縮時のパラメータ$a^c_i$と膨張時のパラメータ$a^e_i$に分けることを提案している.また,更に精度を向上させるために,低圧帯と高圧帯でもパラメータを使い分けることを提案している.本論文では,これらの提案を無視し,収縮･膨張を問わず全圧力範囲で同一のパラメータを用いることで,長さ推定の手法を単純化している.これは,本モデルによるPAMの長さ推定を反射機構に適用することを想定しているからである.推定パラメータを状況により切り替える必要があると,反射機構が外乱に迅速に反応することが困難になる.また,反射機構にはPAMの突然の伸長もしくは収縮を検知することだけが求められているので,PAMの精密な制御に求められるような高精度さは必要ないと考える.反射機構は中央制御系の計算負荷を軽減することを目的とするため,反射機構の計算負荷自体が高くてはならない.特に,筋骨格ロボットにはマイクロコンピュータを搭載することも多いため,計算資源の限られた環境での実行を考慮して,モデルを単純化している.
  

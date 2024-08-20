@@ -1,7 +1,7 @@
 \subsection{Parameter Identification}
 Fig. \ref{fig:length_pressure} shows the relationship between the pressure $p$ and the natural length $l_n$ of the PAMs. As assumed, there is a tendency for $l_n$ to decrease linearly with $p$ within the range of the tested pressure. The dashed lines in Fig. \ref{fig:length_pressure} represent
 
-\begin{figure}[H]
+\begin{figure}[t]
     \hfill
     \begin{minipage}{\columnwidth}
         \centering
@@ -20,7 +20,6 @@ Fig. \ref{fig:length_pressure} shows the relationship between the pressure $p$ a
 
 Fig. \ref{fig:pam_b_static1} shows the result of the static loading experiment for PAM-B. The red and blue points represent the data during expansion and contraction respectively, and the green dashed lines represent the solutions $d$ to Eq. (\ref{eq:model}), which is given by substituting the acquired parameters $a_i$ and the measured $f$ and $p$.
 Generally, PAMs exhibit hysteresis due to friction, so the data differ between expansion and contraction processes. We only present the static loading experimental result for PAM-B because of the space constraint, but similar results were obtained for the other PAMs.
-
 
 
 % \begin{textblock*}{\columnwidth}(11cm,3cm) 
@@ -88,7 +87,7 @@ Generally, PAMs exhibit hysteresis due to friction, so the data differ between e
 % \end{figure}
 \subsection{Error Evaluation} 
 Fig. \ref{fig:pam_b_dynamic} and Fig. \ref{fig:pam_d_dynamic} show the dynamic length estimation result for PAM-B and PAM-D, respectively.
-With the proposed method, the length estimation was achieved with maximum errors of $1.72\%$ for PAM-A, $1.19\%$ for PAM-B, $1.18\%$ for PAM-B, and  $1.65\%$ for PAM-D respectively, and with mean squared errors of $0.861\%$ for PAM-A, $0.653\%$ for PAM-B, $0.683\%$ for PAM-C, and $0.846\%$ for PAM-D respectively.
+With the proposed method, with respect to the measurements by the linear encoder, the length estimation was achieved with maximum errors of $1.72\%$ for PAM-A, $1.19\%$ for PAM-B, $1.18\%$ for PAM-B, and  $1.65\%$ for PAM-D respectively , and with mean squared errors of $0.861\%$ for PAM-A, $0.653\%$ for PAM-B, $0.683\%$ for PAM-C, and $0.846\%$ for PAM-D respectively.
 
 \subsection{Reaching Task}
 Table. \ref{tab:PAM_reflex} shows the parameters for the length estimation of the agonist and antagonist muscles. The considerable difference in the voltage-force slope $q$  between the two PAMs is attributable to the varying sensitivities of the handmade force gauges.
@@ -101,8 +100,8 @@ Table. \ref{tab:PAM_reflex} shows the parameters for the length estimation of th
         \hline
         PAM & $m$ & $h$ & $a_3$ & $a_2$ & $a_1$ & $a_0$ & $q$ \\
         \hline \hline
-        Agonist & -60.1 & 170.1 & -0.201 & 7.00 & 0.256 & 0.911 & 1.84 \\
-        Antagonist & -70.3 & 178.5 & 0.871 & 1.24 & -0.129 & 22.4 & 3.55 \\
+        Agonist & -60.1 & 170.1 & -0.201 & 7.00 & 0.256 & 0.911 & $2.25 \times 10^{-3}$\\
+        Antagonist & -70.3 & 178.5 & 0.871 & 1.24 & -0.129 & 22.4 & $4.33 \times 10^{-3}$ \\
         \hline
     \end{tabular}
     } 
@@ -118,10 +117,10 @@ Table \ref{tab:reflex_para} shows the velocity threshold $V_{thr}$, which were d
     \caption{Parameters for Stretch Reflex} 
     \begin{tabular}{c|cc}
         \hline
-        PAM &$V_{thr}$&$k$\\
+        PAM &$V_{thr} [\si{mm/s}]$&$ k [\si{GPa\cdot s}]$\\
         \hline \hline
-        Agonist & & \\
-        Antagonist & &\\
+        Model & 70 & 1/800\\
+        Fiber Sensor & 25 & 1/300\\
         \hline
     \end{tabular}
 \label{tab:reflex_para}

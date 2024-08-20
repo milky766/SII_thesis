@@ -1,9 +1,5 @@
 modelとsensorによるreflexが純粋に比較できない点は言及しておくべき（thresholdやgainの設定が実験的にされているから。それに、フィルターもかけているし）
 
-angle sensorのdegreeの向きには言及する
-
-
-移動平均（フィルター）の話もmethodのところで話すべき
 
 フォースゲージが緩むと長さ推定の精度が悪くなる点は触れるべき。ただし、これは反射機構を実現するという意味では問題にならない。
 筋の全体の長さを常に監視しておくという意味ではdisadvantageになる。
@@ -14,11 +10,18 @@ discussion
 そもそも、使っているひずみゲージはプラスチック専用だし）
 3.reflex （ファイバーセンサとの比較,センサのoverstretch現象にもここで触れる（コレは伸張反射をするうえで弱点になりうる）
 
+without reflexについて言及するか考える
 
+reflexのキャリブレーションの難しさに触れる。
+そのときに、sensorのほうがimpactのあったときによりspeedがスパイクがはっきりと現れて閾値を決めやすい点も触れておく
 
+tension sensorが引っ張られていないときは逆に人間らしくて面白いという点は、人間の反射の文献を付けつつ言及する
 
+reflexの圧力が0.1MPaぐらいだったことも触れておく
+
+実験回数も述べておく
+
+文章すべて書き終わったら図の位置チェック
 
 完成したらchatgptで文章チェック
 
-- discussion should be better framed on highlighting the value of the results and comparing them with existing solutions.
-errors are provided as percentage, but it is not clear with respect to what. Please, clarify.
