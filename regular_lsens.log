@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.8.20)  20 AUG 2024 23:48
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.4.13)  21 AUG 2024 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -784,7 +784,7 @@ File: fig/length_pressure.pdf Graphic file (type pdf)
 File: fig/20231124_5_4s_2d_ieeesensors1.pdf Graphic file (type pdf)
 <fig/20231124_5_4s_2d_ieeesensors1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--17
+Underfull \hbox (badness 10000) in paragraph at lines 7--19
 
  []
 
@@ -795,20 +795,19 @@ File: fig/20231220_2_s_by_2_2d_ieeesensors1.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 87.
 [3]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 88.
+(Font)              No change on input line 91.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 92.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 112.
-)
+(Font)              No change on input line 113.
+ [4])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 117.
  (./tex/discussion.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 1.
- [4]
 File: fig/reaching_error.pdf Graphic file (type pdf)
 <fig/reaching_error.pdf>
 File: fig/time_vs_angle_model_sensor.pdf Graphic file (type pdf)
@@ -816,9 +815,9 @@ File: fig/time_vs_angle_model_sensor.pdf Graphic file (type pdf)
 File: fig/20240819_r20_reflex_all_plt.pdf Graphic file (type pdf)
 <fig/20240819_r20_reflex_all_plt.pdf>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 93.
+(Font)              No change on input line 72.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 94.
+(Font)              No change on input line 76.
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 127.
@@ -834,6 +833,7 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 137.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 139.
+ [5]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 141.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -842,8 +842,6 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 145.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 147.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 149.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 151.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -858,6 +856,8 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 161.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 163.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 168.
 
 
 ** Conference Paper **
@@ -870,14 +870,14 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[5] [6] (./regular_lsens.aux) ) 
+[6] (./regular_lsens.aux) ) 
 Here is how much of TeX's memory you used:
- 9693 strings out of 479777
- 206888 string characters out of 5885796
- 496786 words of memory out of 5000000
- 27891 multiletter control sequences out of 15000+600000
+ 9694 strings out of 480232
+ 206897 string characters out of 5896229
+ 495098 words of memory out of 5000000
+ 27856 multiletter control sequences out of 15000+600000
  509438 words of font info for 147 fonts, out of 8000000 for 9000
- 309 hyphenation exceptions out of 8191
- 72i,11n,79p,990b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14 hyphenation exceptions out of 8191
+ 72i,11n,79p,1802b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on regular_lsens.dvi (6 pages, 35616 bytes).
+Output written on regular_lsens.dvi (6 pages, 41752 bytes).

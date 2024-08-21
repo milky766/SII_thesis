@@ -63,8 +63,8 @@ During the experiment, the change in resistance of the strain gauges went to a q
     \label{eq:voltage}
     V=qf+V_{base}
 \end{equation}
-$V$ is the voltage signal from the strain gauge, $q$ is the slope between the voltage and the force, and $V_{base}$ is the base voltage when no force is applied.
-The parameters q was obtained by measuring the voltage and the force while statistically loading the strain gauges.
+$V$ is the voltage signal from the strain gauge, $q$ is the slope of voltage to force, and $V_{base}$ is the base voltage when no force is applied.
+The parameters $q$ was obtained by measuring the voltage and the force while statistically loading the strain gauges.
 Eq.(\ref{eq:voltage}) can be rewritten as 
 \begin{equation}
     \label{eq:voltage_2}
@@ -92,7 +92,7 @@ The arm was equipped with the basket and expected to keep it in a fixed position
 \end{equation}
 where $j$ is the sampling number, $l_j$ is the estimated length, and $dt$ is the sampling period.
 Since the system was set to 100 $\si{Hz}$, $dt$ was 0.01 $\si{s}$.
-When the impact rapidly stretched the agonist PAM and its velocity exceeded a predetermined threshold, the stretch reflex was induced for 10 $\si{ms}$. The pressure command from the stretch reflex mechanism converged to the goal pressure from a top controller as follow:
+When the impact rapidly stretched the agonist PAM and its velocity exceeded a predetermined threshold, the stretch reflex was induced for 200 $\si{ms}$. The pressure command from the stretch reflex mechanism converged to the goal pressure from a top controller as follow:
 \begin{align}
     \label{eq:command_pressure}
     p_{ago} &= p_{tp - ago} + \Delta p_{ago - exci} - \Delta p_{anta - inhi} \\
