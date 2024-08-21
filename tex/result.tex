@@ -109,7 +109,28 @@ Fig.\ref{fig:reaching_error} displays the length estimation errors of the model 
     \label{tab:PAM_reflex}
 \end{table}
 
-
+\begin{figure*}[t]
+    \centering
+    \begin{minipage}[H]{\textwidth} 
+        \begin{minipage}[H]{0.48\textwidth} 
+            \centering
+            \includegraphics[width=\columnwidth]{fig/reaching_error.pdf}
+            \caption{Length Estimation Error in Reaching Task}
+            \label{fig:reaching_error}
+            \vspace{1em}
+            \includegraphics[width=\columnwidth]{fig/time_vs_angle_model_sensor.pdf}
+            \caption{Comparison of Reflex Angles between Model and Fiber Sensor}
+            \label{fig:reflex_angle}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[H]{0.48\textwidth} 
+            \centering
+            \includegraphics[width=\columnwidth]{fig/20240819_r20_reflex_all_plt.pdf}
+            \caption{Dynamic Behavior of Reflex by Model}
+            \label{fig:reflex_all}
+        \end{minipage}
+    \end{minipage}
+\end{figure*}
 \subsection{Stretch Reflex}
 Table \ref{tab:reflex_para} shows the velocity threshold $V_{thr}$ and the feedback gain $k$, and they were determined experimentally by assessing the magnitude of the impact. 
 
@@ -129,121 +150,7 @@ Table \ref{tab:reflex_para} shows the velocity threshold $V_{thr}$ and the feedb
 
 Fig. \ref{fig:reflex_all} illustrates the dynamic behavior of the reflex by the model. The starting angle of the arm was -36 deg due to the basket's weight of 83.1 g. When the falling mass made an impact, the angle dropped dramatically, creating sudden soar in the voltage signal from the strain gauge and thus in the estimated velocity. It went beyond the threshold and triggered the stretch reflex, leading to increasing pressure in the agonist muscle and decreasing in antagonist. The arm was then lifted back to the initial position, and after some oscillation, it settled down to a certain angle, holding the mass left in the basket.
 
-Fig.\ref{fig:reflex_angle} displays the average and range of angles in 20 trials of the reflexes by the model and by the fiber sensor.
 
-それぞれの反射に対して、閾値やゲインを実験的に決めているので、純粋にアームの角度の振る舞いを比較することはできないが、ファイバーセンサによる反射をモデルにより再現できていると言える。高橋らは、伸張反射のみならず、
-
-% \begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\columnwidth]{fig/20231220_2_s_by_2_2d_ieeesensors1.pdf}
-%    \caption{Dynamic length estimation (PAM-D, Silicon)}
-%    \label{fig:pam_d_dynamic}
-% \end{figure}
-
-% \clearpage
+Fig.\ref{fig:reflex_angle} displays the average and range of angles in 20 trials of the reflexes by the model and by the fiber sensor. Since the thresholds and gains for each reflex are determined experimentally, it is not possible to purely compare the behavior of the arm angles, but it can be said that the reflex by the fiber sensor are well replicated by the model.
 
 
-
-
-
-
-% \begin{table}[h]
-%     \centering
-%     \caption{Maximum error and root mean squared \\percentage error of dynamic length estimation }
-%     \resizebox{\columnwidth}{!}{
-%         \begin{tabular}{c|cccccc}
-%             \hline
-%             PAM & \begin{tabular}[c]{@{}c@{}}Maximum Error[$\%$]\\(Eq.(\ref{eq:model})) \end{tabular} & \begin{tabular}[c]{@{}c@{}}Root Mean\\Squared Error[$\%$]\\(Eq.(\ref{eq:model})) \end{tabular} & \begin{tabular}[c]{@{}c@{}}Maximum Error[$\%$]\\(Eq.(\ref{eq:model_2d1})) \end{tabular} & \begin{tabular}[c]{@{}c@{}}Root Mean\\Squared Error[$\%$]\\(Eq.(\ref{eq:model_2d1})) \end{tabular}&\begin{tabular}[c]{@{}c@{}}Maximum Error[$\%$]\\(Eq.(\ref{eq:model_3d})) \end{tabular}& \begin{tabular}[c]{@{}c@{}}Root Mean\\Squared Error[$\%$]\\(Eq.(\ref{eq:model_3d}))\\
-%             \hline \hline
-%             A & 1.72&0.861&1.12&0.633& &&\\
-%             B & 1.19&0.653 &0.773&0.353&&&\\
-%             C & 1.18&0.683&1.01&0.548& &&\\
-%             D & 1.65 & 0.846 &0.755& 0.435& &&\\
-%             \hline
-%             \hline
-%         \end{tabular}
-%     }
-%     \label{tab:error}
-% \end{table}
-
-% \begin{table}[h]
-%     \centering
-%     \caption{Maximum error and root mean squared \\percentage error of dynamic length estimation }
-%     \resizebox{\columnwidth}{!}{
-%         \begin{tabular}{c|ccccccc}
-%             \hline
-%             PAM & \begin{tabular}[c]{@{}c@{}}Maximum Error[$\%$]\\(Eq.(\ref{eq:model})) \end{tabular} & \begin{tabular}[c]{@{}c@{}}Root Mean\\Squared Error[$\%$]\\(Eq.(\ref{eq:model})) \end{tabular} & \begin{tabular}[c]{@{}c@{}}Maximum Error[$\%$]\\(Eq.(\ref{eq:model_2d(1)})) \end{tabular} & \begin{tabular}[c]{@{}c@{}}Root Mean\\Squared Error[$\%$]\\(Eq.(\ref{eq:model_2d(1)})) \end{tabular}&\begin{tabular}[c]{@{}c@{}}Maximum Error[$\%$]\\(Eq.(\ref{eq:model_3d})) \end{tabular}&\begin{tabular}[c]{@{}c@{}}Root Mean\\Squared Error[$\%$]\\(Eq.(\ref{eq:model_3d})) \end{tabular} \\
-%             \hline \hline
-%             A & 1.72&0.861&1.12&0.633&1.22&0.516&\\
-%             B & 1.19&0.653 &0.773&0.353&1.41&0.484&\\
-%             C & 1.18&0.683&1.01&0.548&0.951&0.500&\\
-%             D & 1.65 & 0.846 &0.755& 0.435&1.99&0.606&\\
-%             \hline
-%         \end{tabular}
-%     }
-%     \label{tab:error}
-% \end{table}
-
-
-% \subsection{推定パラメータ同定}
-% 図\ref{fig:length_pressure}は，4種の空気圧人工筋の圧力$P$と自然長$L_n$の関係である．
-% 仮定通り，圧力$P$に対して自然長$L_n$が線形的に減少する傾向が見られる.
-% 図中の点線は，最小二乗法により各データ郡にフィッティングした(\ref{eq:L_n})式である．
-
-% 一方,図\ref{fig:pam_b_static1}はPAM-Bに対する推定パラメータ同定実験の結果である．
-% ただし,赤色の点が膨張時のデータ,青色の点が収縮時のデータ,緑色の点線が取得した推定パラメータ$a_i$による推定値を表す.
-% 一般に,空気圧人工筋は摩擦によるヒステリシスを有するので,膨張時と収縮時でデータが異なる.
-% % また,図\ref{fig:pam_b_static2}は図\ref{fig:pam_b_static1}中の5つの圧力に対する各データをまとめて三次元空間上に示した図である.
-% 本論文では,紙幅上PAM-Bに対する実験結果のみ示すが,他の空気圧人工筋に対しても同様の結果が得られた.
-
-% \begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\columnwidth]{fig/length_pressure.pdf}
-%    \caption{Relationship between pressure and unstretched length}
-%    \label{fig:length_pressure}
-% \end{figure}
-
-% \begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\columnwidth]{fig/20231124_5_4s_se_2d_g.pdf}
-%    \caption{Relationship between force and stretched length at each pressure (PAM-B)}
-%    \label{fig:pam_b_static1}
-% \end{figure}
-
-% % \begin{figure}[H]
-% %    \centering
-% %    \includegraphics[width=\columnwidth]{fig/20231124_5_4s_se_3d_g.pdf}
-% %    \caption{Relationship between pressure, force and stretched length (PAM-B)}
-% %    \label{fig:pam_b_static2}
-% % \end{figure}
-
-
-% \subsection{動的測定実験} 
-% 図\ref{fig:pam_b_dynamic}は,,PAM-Bに対して取得した推定パラメータを用い,動的に長さを推定した結果である．
-% 提案手法では,表\ref{tab:error}の第2列および第3列に示す最大誤差および平均平方二乗誤差率で,それぞれ動的に長さを推定できた．
-
-
-% \begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\columnwidth]{fig/20231207_1_4s_by_5_2d_g.pdf}
-%    \caption{Result of dynamic length estimation (PAM-B)}
-%    \label{fig:pam_b_dynamic}
-% \end{figure}
-
-% \begin{table}[h]
-%     \centering
-%     \caption{Maximum error and root mean squared \\percentage error of dynamic length estimation }
-%     \resizebox{\columnwidth}{!}{
-%         \begin{tabular}{c|ccccc}
-%             \hline
-%             \begin{tabular}[c]{@{}c@{}}空気圧\\人工筋\end{tabular} & \begin{tabular}[c]{@{}c@{}}最大誤差[$\%$]\\(二次式) \end{tabular} & \begin{tabular}[c]{@{}c@{}}平均平方\\二乗誤差率[$\%$]\\(二次式) \end{tabular} & \begin{tabular}[c]{@{}c@{}}最大誤差[$\%$]\\(三次式) \end{tabular} & \begin{tabular}[c]{@{}c@{}}平均平方\\二乗誤差率[$\%$]\\(三次式) \end{tabular} \\
-%             \hline \hline
-%             PAM-A & 0.975&0.510&1.22&0.516& \\
-%             PAM-B & 0.955&0.510 &1.41&0.484&\\
-%             PAM-C & 1.07&0.580&0.951&0.500& \\
-%             PAM-D & 1.41 & 0.475 &1.99& 0.606& \\
-%             \hline
-%         \end{tabular}
-%     }
-%     \label{tab:error}
-% \end{table}
