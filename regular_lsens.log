@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.8.20)  21 AUG 2024 22:33
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.8.20)  22 AUG 2024 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -742,16 +742,16 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/b/it' undefined
 (Font)              No change on input line 95.
 (./tex/custom_macro.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 108.
+(Font)              No change on input line 102.
  (./tex/introduction.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 111.
- (./tex/model.tex [1
+(Font)              No change on input line 105.
+ (./tex/model.tex) [1
 
 
-])
+]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 114.
+(Font)              No change on input line 108.
 
 (./tex/method.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -775,7 +775,7 @@ s-sure from the top
 
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 117.
+(Font)              No change on input line 111.
  (./tex/result.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 1.
@@ -807,10 +807,10 @@ File: fig/time_vs_angle_model_sensor.pdf Graphic file (type pdf)
 File: fig/20240819_r20_reflex_all_plt.pdf Graphic file (type pdf)
 <fig/20240819_r20_reflex_all_plt.pdf>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 134.
+(Font)              No change on input line 137.
  [4])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 120.
+(Font)              No change on input line 114.
  (./tex/discussion.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 1.
@@ -821,9 +821,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 22.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 25.
+(Font)              No change on input line 30.
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
+(Font)              No change on input line 124.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 126.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 128.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 130.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 132.
@@ -840,27 +846,23 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 144.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 146.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 148.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 150.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 152.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 154.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 156.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 158.
+
+[6]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 160.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 162.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 164.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 166.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 171.
+(Font)              No change on input line 165.
 
 
 ** Conference Paper **
@@ -873,7 +875,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[6] (./regular_lsens.aux) ) 
+[7
+
+] (./regular_lsens.aux) ) 
 Here is how much of TeX's memory you used:
  9694 strings out of 479777
  206897 string characters out of 5885796
@@ -881,6 +885,6 @@ Here is how much of TeX's memory you used:
  27892 multiletter control sequences out of 15000+600000
  509438 words of font info for 147 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
- 72i,11n,79p,1804b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,11n,79p,1232b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on regular_lsens.dvi (6 pages, 42224 bytes).
+Output written on regular_lsens.dvi (7 pages, 42932 bytes).

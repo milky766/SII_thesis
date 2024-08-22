@@ -3,20 +3,20 @@
 \begin{figure}[h]
     \centering
     \includegraphics[width=\columnwidth]{fig/static_experiment.pdf}
-    \caption{Outline Diagram of Static Loading Experiment}
+    \caption{Outline Diagram of Static Tensile Test}
     \label{fig:static_equipment}
  \end{figure}
 
-Fig. \ref{fig:static_equipment} is an outline diagram of the static loading experiment to identify the parameters $m$, $h$, and $a_i$ .
-Table \ref{tab:PAM} shows the shapes and materials of the used four PAMs (A,B,C,D).
+Fig. \ref{fig:static_equipment} is an outline diagram of the static tensile test to identify the parameters $m$, $h$, and $a_i$ .
+Table \ref{tab:PAM} lists the shapes and materials of the four experimented PAMs (A,B,C,D).
 The experimental procedure was as follows.
 First, the pressure $p$ was adjusted to a constant level.
-Taking into account the strength of the materials, the pressure of PAM-A, PAM-B, or PAM-C was adjusted to $0.4\si{MPa}$, $0.5\si{MPa}$, $0.6\si{MPa}$, $0.7\si{MPa}$ or $0.8\si{MPa}$, while the pressure of PAM-D was $0.2\si{MPa}$, $0.3\si{MPa}$, $0.4\si{MPa}$, $0.5\si{MPa}$, or $0.6\si{MPa}$.
-Next, the PAM was gradually stretched from the natural length by y $2.5\si{mm}$ increments and the deformation $d$, the force $f$, and the pressure $p$ were measured at each point.
+Taking into account the strength of the materials, the pressure of PAM-A, PAM-B, or PAM-C was adjusted to 0.4 $\si{MPa}$, 0.5 $\si{MPa}$, 0.6 $\si{MPa}$, 0.7$\si{MPa}$ or 0.8 $\si{MPa}$, while the pressure of PAM-D was 0.2 $\si{MPa}$, 0.3 $\si{MPa}$, 0.4 $\si{MPa}$, 0.5 $\si{MPa}$, or 0.6 $\si{MPa}$.
+Next, the PAM was gradually stretched from the natural length by 2.5 $\si{mm}$ increments and the deformation $d$, the force $f$, and the pressure $p$ were measured at each point.
 Each value was stabilized by waiting for at least 2 seconds after deformation.
 Once $d$ reached its maximum value predetermined based on each PAM's strength, it was contracted to the natural length $l_n$ by  $2.5\si{mm}$ decrements, and $d$, $p$, and $f$ were measured again at each point.
 Finally, the parameters $m$, $h$, and $a_i$ were calculated by the least squares method.
-The pressure sensor used was PSE540(SMC Co.), the linear encoder was DS-025(MUTOH INDUSTRIES Co. Ltd.), and the force gauge was FGP-5(Nidec Co.).
+The pressure sensor used was PSE540 (SMC Co.), the linear encoder was DS-025 (MUTOH INDUSTRIES Co. Ltd.), and the force gauge was FGP-5 (Nidec Co.).
 
 \begin{table}[h]
     \centering
@@ -40,7 +40,7 @@ The pressure sensor used was PSE540(SMC Co.), the linear encoder was DS-025(MUTO
 \subsection{Error Evaluation}
 We dynamically estimated the length of the four different PAMs to verify the general applicability of the model.
 The jig holding the left end of the PAM in Fig. \ref{fig:static_equipment} was removed and a pulley was installed in its place. A proportional control valve was installed between the pressure sensor and the compressor.
-The experiment procedure was as follows. First, a weight of either $5\si{kg}$ or $10\si{kg}$ was connected to the PAM via the pulley to apply a constant force $f$. Next, considering the strength of each PAM, the pressure $p [\si{MPa}]$ was varied over time $t [\si{s}]$ by the proportional control valve according to 
+The experimental procedure was as follows. First, a weight of either 5 $\si{kg}$ or 10 $\si{kg}$ was connected to the PAM via the pulley to apply a constant force $f$. Next, considering the strength of each PAM, the pressure $p [\si{MPa}]$ was varied over time $t [\si{s}]$ by the proportional control valve according to 
 \begin{equation}
 p = 0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.6
 \label{eq:Pref}
@@ -51,14 +51,14 @@ p = 0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.4
 \label{eq:Prefd}
 \end{equation}
 for PAM-D. At each time, $f$, $p$, and the length $l$ were measured. 
-Finally, the errors were calculated between the measured and estimated $l$.
+Finally, the errors were calculated between the measured and estimated length.
 
 \subsection{Reaching Task}
-We conducted a reaching experiment to see the errors when the model is actually incorporated into a robot arm. The system developed by Takahashi et al.\cite{takahashi} was adapted and located in a vertical direction. The system consisted of an arm with a pair of PAMs, an agonist muscle and an antagonist muscle, and their shapes and materials are shown in Table \ref{tab:PAM}. The muscles were connected to the arm with fishing line via shafts, and foil strain gauges (KFP-5-120-C1-65L1M2R, Kyowa Electronic Instrument Co. Ltd.) based on acrylic boards were attached to one end of each muscle.
+We conducted a reaching experiment to see the errors when the model is actually incorporated into a robot arm. The system developed by Takahashi et al.\cite{takahashi} was adapted and positioned vertically. The system consisted of an arm with a pair of PAMs, an agonist muscle and an antagonist muscle, and their shapes and materials are listed in Table \ref{tab:PAM}. The muscles were connected to the arm with fishing line via shafts, and foil strain gauges (KFP-5-120-C1-65L1M2R, Kyowa Electronic Instrument Co. Ltd.) based on acrylic boards were attached to one end of each muscle.
 We also wrapped the fiber sensor developed by Hitzmann et al. \cite{fiber} around the PAMs, which assesses the rate of length change by detecting variations in resistance, thereby calculating the rate of diameter change. around the PAMs to estimate the rate of length change by measuring the change in resistance and thus determining the rate of change in the diameter of a PAM.
-The reaching movement was achieved by linearly increasing the pressure of the agonist muscle from $0.2 \si{MPa}$ to $0.6 \si{MPa}$ while simultaneously decreasing the pressure of the antagonist muscle from $0.6 \si{MPa}$ to $0.2 \si{MPa}$. During the reaching movement, the length of the PAM was measured with the linear encoder while it was estimated by the fiber sensor and our model, and the errors were then calculated. The experiment time was $12 \si{s}$, and the sampling frequency was set to $100 \si{Hz}$.
+The reaching movement was achieved by linearly increasing the pressure of the agonist muscle from 0.2 $\si{MPa}$ to 0.6 $\si{MPa}$ while simultaneously decreasing the pressure of the antagonist muscle from 0.6 $\si{MPa}$ to 0.2 $\si{MPa}$. During the reaching movement, the length of the PAM was measured with the linear encoder while it was estimated by the fiber sensor and our model, and the errors were then calculated. The experiment time was $12 \si{s}$, and the sampling frequency was set to 100 $\si{Hz}$.
 
-During the experiment, the change in resistance of the strain gauges went to a quarter Wheatstone bridge circuit where the three resistors other than the strain gauge were $120 \pm 0.5 \Omega$. Unlike the force gauge, which can directly measure the force of the PAMs, voltage signal from the circuit was converted to force according to Eq.(\ref{eq:voltage}). Eq.(\ref{eq:voltage}) assumes that the voltage is a linear function of force because the voltage from the Wheatstone bridge circuit is proportional to the strain\cite{wheatstone} and the strain is proportional to the force while the material is elastically deformed.
+During the experiment, the change in resistance of the strain gauges went to a quarter Wheatstone bridge circuit where the three resistors other than the strain gauge were $120 \pm 0.5 \Omega$. Unlike the force gauge, which can directly measure the force of the PAMs, voltage signal from the circuit was converted to force according to Eq. (\ref{eq:voltage}). Eq. (\ref{eq:voltage}) assumes that the voltage is a linear function of force because the voltage from the Wheatstone bridge circuit is proportional to the strain\cite{wheatstone} and the strain is proportional to the force while the material is elastically deformed.
 \begin{equation}
     \label{eq:voltage}
     V=qf+V_{base}

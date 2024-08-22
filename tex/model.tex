@@ -10,14 +10,14 @@ Assuming that $l_n$ is a linear function of $p$ within a certain pressure range,
 l_n = mp + h
 \label{eq:L_n}
 \end{equation}
-where $m$ and $h$ can be determined by a static loading experiment.
+where $m$ and $h$ can be determined by static tensile tests.
  
 Introducing the PAM's nonlinearity into the spring and assuming that the spring constant is the function of $p$\cite{spring}, the force $f$ is given by
 \begin{equation}
 \label{eq:model}
 f = (a_3pd + a_2p + a_1d + a_0)d
 \end{equation}
-The terms $pd^2$ and $d^2$ can be found in Chou et al.'s fundamental model\cite{chouMeasurementModelingMcKibben1996}, which capture the essential dynamic properties of the PAM. The term $pd$  comes from Tondu et al.'s model\cite{ModelingControl} to more accurately reflect differences in the shape of the PAM. The term $d$ is added based on Ferraresi et al.'s model\cite{Comparison} to account for differences in material. The constants $a_0 \sim a_3$ in Eq. (\ref{eq:model}) are determined by the static loading experiment. Based on the $a_0 \sim a_3$, $d$  can be calculated from the measured $p$ and $f$ by solving Eq. (\ref{eq:model}).
+The terms $pd^2$ and $d^2$ can be found in Chou et al.'s fundamental model\cite{chouMeasurementModelingMcKibben1996}, which capture the essential dynamic properties of the PAM. The term $pd$  comes from Tondu et al.'s model\cite{ModelingControl} to more accurately reflect differences in the shape of the PAM. The term $d$ is added based on Ferraresi et al.'s model\cite{Comparison} to account for differences in material. The constants $a_0 \sim a_3$ in Eq. (\ref{eq:model}) are determined by the static tensile tests. Based on the $a_0 \sim a_3$, $d$  can be calculated from the measured $p$ and $f$ by solving Eq. (\ref{eq:model}).
 
 
 
