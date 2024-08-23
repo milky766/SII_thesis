@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.8.20)  23 AUG 2024 10:06
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.4.13)  23 AUG 2024 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,20 +718,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--89
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-\OT1/ptm/m/n/8 Hosoda are with De-part-ment of Me-chan-i-cal En-gi-neer-ing and
-
- []
-
-
-Underfull \hbox (badness 2158) in paragraph at lines 89--89
-\OT1/ptm/m/n/8 Sci-ence, Grad-u-ate School of En-gi-neer-ing, Ky-oto Uni-ver-si
-ty, Ky-oto,
+Underfull \hbox (badness 5548) in paragraph at lines 89--89
+\OT1/ptm/m/n/8 Grad-u-ate School of En-gi-neer-ing, Ky-oto Uni-ver-sity, Ky-oto
+, Japan
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 89--89
-\OT1/ptm/m/n/8 Japan \OT1/pcr/m/n/9 yoshida.mizuki.68s@st.kyoto-u.ac.jp,
+\OT1/pcr/m/n/9 email: yoshida.mizuki.68s@st.kyoto-u.ac.jp,
  []
 
 
@@ -815,14 +809,13 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 3.
  [4]
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 23.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 28.
+(Font)              No change on input line 21.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 26.
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 124.
@@ -879,12 +872,12 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./regular_lsens.aux) ) 
 Here is how much of TeX's memory you used:
- 9694 strings out of 478741
- 206897 string characters out of 5860982
- 499896 words of memory out of 5000000
- 27984 multiletter control sequences out of 15000+600000
+ 9694 strings out of 480232
+ 206897 string characters out of 5896229
+ 495099 words of memory out of 5000000
+ 27856 multiletter control sequences out of 15000+600000
  509438 words of font info for 147 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 72i,12n,79p,1299b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14 hyphenation exceptions out of 8191
+ 72i,12n,79p,1260b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on regular_lsens.dvi (7 pages, 42836 bytes).
+Output written on regular_lsens.dvi (7 pages, 42744 bytes).
