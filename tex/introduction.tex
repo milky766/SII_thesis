@@ -1,24 +1,48 @@
-Soft robots are expected to achieve adaptability to environments like living organisms\cite{rus_design_2015}. 
-They have already been developed to coexist with humans \cite{Compac,polygerinos_soft_2015}, and have been used to understand biological intelligence through a constructive methodology\cite{hosoda,marchese_autonomous}.
-As actuators in musculoskeletal robots, pneumatic artificial muscles (PAMs) are often used\cite{mirvakili_artificial}.
-PAMs have several advantages over conventional actuators, such as a superior power-to-mass ratio\cite{Dynamic}, high compliance\cite{SDCharacteristics}, and low cost and ease of production\cite{ashwin_survey_2018}.
-% However, their inherent nonlinearity places heavy computational demands on a central control system.
-% To overcome this hurdle, it is proposed to integrate reflex mechanisms found in living organisms into musculoskeletal robots\cite{takahashi}.
-However, PAMs have nonlinearity because they consist of elastic materials, which places heavy computational demands on a central control system.
-
+Soft robots are expected to be adaptive to the environment like living organisms\cite{rus_design_2015}. They have already been developed to coexist with humans [2, 3], and used to understand biological intelligence through a constructive methodology [4, 5]. As actuators in musculoskeletal robots, a pneumatic artificial muscle (PAM) is a popular solution \cite{mirvakili_artificial}. PAMs have several advantages over conventional actuators such as a superior power-to-mass ratio\cite{Dynamic}, high compliance\cite{SDCharacteristics}, and low cost and ease of production\cite{ashwin_survey_2018}.
+However, PAMs are nonlinear, which places heavy computational demands on a central control system.
 To overcome this hurdle, it is proposed to integrate reflex mechanisms found in living organisms into musculoskeletal robots \cite{takahashi}.
-Reflex mechanisms enable local control systems to swiftly respond to environmental changes without commands from a central control system, thereby reducing its computational load. 
+Reflex mechanisms provide local control for swiftly responding to environmental changes without commands from the central control system, thereby reducing its computational load. 
+One of the reflex mechanisms in the human body, a stretch reflex, detects the sudden change of muscle length \cite{kandel}, and protect the muscle from overstretching.
 
-One of the reflex mechanisms, a stretch reflex, detects the sudden change of muscle length \cite{kandel}, but directly measuring PAM length with a sensor poses several challenges\cite{nakajima}.
-First, since a reflex action occurs instantaneously, it might lead to significant problems such as slackness in a wire encoder or light screen in a laser sensor, 
-which could prevent accurate measurement of the PAM's length. 
-Second, because a length sensor needs to be posed at both PAM's ends, it could limit robot design. 
-Third, sensor stiffness could impair the flexibility of the PAM.
+This paper presents a method to realize the stretch reflex in musculoskeletal robots without length sensors. A PAM is modeled as a nonlinear spring, and its length is estimated as the sum of natural length and deformation. The spring constant is dependent on pressure and deformation, and its dimension was determined referring to previous research. Coefficients of the spring constant were determined experimentally to reflect the individual characteristics of PAMs, and the general applicability of the model across different materials and shapes of PAMs was verified in dynamic length estimation experiments. The model was subsequently incorporated into the stretch reflex mechanism and required to maintain a robot arm in a fixed position while the falling mass generated an impact. The dynamic response of the reflex with the model was then compared to that with a conventional sensor. 
 
-This paper presents a method to estimate the PAM length from its pressure and force instead of directly measuring it with the goal of incorporating the stretch reflex into musculoskeletal robots.
+
+
+One of the reflex mechanisms in the human body, a stretch reflex, detects the sudden change of muscle length \cite{kandel}, but directly measuring PAM length with a sensor poses several challenges\cite{nakajima}.
+
+
+estimate the PAM length from its pressure and force instead of directly measuring it with the goal of incorporating the stretch reflex into musculoskeletal robots.
 The model views a PAM as a nonlinear spring, and the spring constant is dependent on its deformation and pressure. 
 We determined the dimensions of the spring constant based on prior models and determined its coefficients experimentally.
 The effectiveness of the model was demonstrated by evaluating the errors in length estimation when pressure varied sinusoidally.
 The model was subsequently incorporated to the stretch reflex mechanism and required to maintain a robot arm in a fixed position while the falling mass generated an impact.
 The dynamic response of the reflex with the model was then compared to that with a conventional sensor. 
-Theoretical models of the PAM often have difficulty in accurately capturing individual differences in properties because they rely on almost immeasurable parameters, such as the total length of braided fibers or their braiding angle\cite{motion}. However, our approach overcomes this limitation by experimentally determining coefficients for each PAM and thus reflecting their characteristic. Applying our model not only offers broad applicability to PAMs of various materials and shapes, but also allows the sensors to gather at one end of a PAM, simplifying the robotic design. 
+Theoretical models of the PAM often have difficulty in accurately capturing individual differences in properties because they rely on almost immeasurable parameters, such as the total length of braided fibers or their braiding angle \cite{motion}. However, our approach overcomes this limitation by experimentally determining coefficients for each PAM and thus reflecting their characteristic. Applying our model not only offers broad applicability to PAMs of various materials and shapes, but also allows the sensors to gather at one end of a PAM, simplifying the robotic design. 
+
+
+One of the reflex mechanisms, a stretch reflex, detects the sudden change of muscle length \cite{kandel}, but directly measuring PAM length with a sensor poses several challenges\cite{nakajima}.
+First, since a reflex action occurs instantaneously, it might lead to significant problems such as slackness in a wire encoder or interruption of the light beam from a laser sensor, 
+which could prevent accurate measurement of the PAM's length. 
+Second, because a length sensor needs to be posed at both PAM's ends, it could limit robot design. 
+Third, sensor stiffness could impair the flexibility of the PAM.
+
+
+
+% Soft robots are expected to be adaptive to the environment like living organisms\cite{rus_design_2015}. They have already been developed to coexist with humans [2, 3], and used to understand biological intelligence through a constructive methodology [4, 5]. As actuators in musculoskeletal robots, a pneumatic artificial muscle (PAM) is a popular solution \cite{mirvakili_artificial}. PAMs have several advantages over conventional actuators such as a superior power-to-mass ratio\cite{Dynamic}, high compliance\cite{SDCharacteristics}, and low cost and ease of production\cite{ashwin_survey_2018}.
+% However, PAMs are nonlinear, which places heavy computational demands on a central control system.
+% To overcome this hurdle, it is proposed to integrate reflex mechanisms found in living organisms into musculoskeletal robots \cite{takahashi}.
+% Reflex mechanisms provide local control for swiftly responding to environmental changes without commands from the central control system, thereby reducing its computational load. 
+
+% One of the reflex mechanisms, a stretch reflex, detects the sudden change of muscle length \cite{kandel}, but directly measuring PAM length with a sensor poses several challenges\cite{nakajima}.
+% First, since a reflex action occurs instantaneously, it might lead to significant problems such as slackness in a wire encoder or interruption of the light beam from a laser sensor, 
+% which could prevent accurate measurement of the PAM's length. 
+% Second, because a length sensor needs to be posed at both PAM's ends, it could limit robot design. 
+% Third, sensor stiffness could impair the flexibility of the PAM.
+
+% This paper presents a method to estimate the PAM length from its pressure and force instead of directly measuring it with the goal of incorporating the stretch reflex into musculoskeletal robots.
+% The model views a PAM as a nonlinear spring, and the spring constant is dependent on its deformation and pressure. 
+% We determined the dimensions of the spring constant based on prior models and determined its coefficients experimentally.
+% The effectiveness of the model was demonstrated by evaluating the errors in length estimation when pressure varied sinusoidally.
+% The model was subsequently incorporated to the stretch reflex mechanism and required to maintain a robot arm in a fixed position while the falling mass generated an impact.
+% The dynamic response of the reflex with the model was then compared to that with a conventional sensor. 
+% Theoretical models of the PAM often have difficulty in accurately capturing individual differences in properties because they rely on almost immeasurable parameters, such as the total length of braided fibers or their braiding angle\cite{motion}. However, our approach overcomes this limitation by experimentally determining coefficients for each PAM and thus reflecting their characteristic. Applying our model not only offers broad applicability to PAMs of various materials and shapes, but also allows the sensors to gather at one end of a PAM, simplifying the robotic design. 

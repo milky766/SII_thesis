@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.4.13)  23 AUG 2024 12:41
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.4.13)  23 AUG 2024 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -298,11 +298,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box71
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
-)
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2022-02-02 v3.0.46 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen176
@@ -417,6 +412,11 @@ Package caption Info: float package is loaded.
 \c@subfigure=\count295
 \c@subtable=\count296
 ) (/usr/share/texlive/texmf-dist/tex/latex/here/here.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \c@tracingmulticols=\count297
@@ -557,128 +557,128 @@ Grid set 16 x 16 = 38.39343pt x 49.68562pt
 TextBlockOrigin set to 0pt x 0pt
 )
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 85.
+h' as default language. on input line 93.
  (./regular_lsens.aux)
 \openout1 = `regular_lsens.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <5> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <5> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <5> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <5> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <7> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <7> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <8> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <8> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <9> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <9> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <11> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <11> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <11> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <11> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <16> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <16> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <16> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <16> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <20> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <20> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <24> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <24> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 85.
+(Font)              No change on input line 93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
 nary-english.trsl
@@ -686,72 +686,75 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 85.
+or `english'. on input line 93.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (I search kanjifont definition file: . . )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 89.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 3364) in paragraph at lines 89--89
+Underfull \hbox (badness 3364) in paragraph at lines 97--97
 [][][]\OT1/ptm/m/n/8 *This work was sup-ported by JSPS KAK-ENHI Grant Num-ber
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 9
+7.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 [][][]$[]$\OT1/ptm/m/n/8 Mizuki Yoshida, Wang Junqi, Takumi Kawasetsu and Koh
  []
 
 
-Underfull \hbox (badness 5548) in paragraph at lines 89--89
+Underfull \hbox (badness 5548) in paragraph at lines 97--97
 \OT1/ptm/m/n/8 Grad-u-ate School of En-gi-neer-ing, Ky-oto Uni-ver-sity, Ky-oto
 , Japan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 \OT1/pcr/m/n/9 email: yoshida.mizuki.68s@st.kyoto-u.ac.jp,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 \OT1/pcr/m/n/9 wang.junqi.77a@st.kyto-u.ac.jp,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 \OT1/pcr/m/n/9 kawasetsu.takumi.2f@kyoto-u.ac.jp,
  []
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/b/it' undefined
-(Font)              No change on input line 95.
+(Font)              No change on input line 103.
 (./tex/custom_macro.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 102.
+(Font)              No change on input line 110.
  (./tex/introduction.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 105.
- (./tex/model.tex) [1
+(Font)              No change on input line 113.
+ (./tex/model.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
-]
+])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 108.
+(Font)              No change on input line 116.
 
 (./tex/method.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -769,7 +772,7 @@ File: fig/reflex_experiment.pdf Graphic file (type pdf)
 <fig/reflex_experiment.pdf>
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 111.
+(Font)              No change on input line 119.
  (./tex/result.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 1.
@@ -781,13 +784,12 @@ File: fig/20231207_1_4s_by_5_2d_ieeesensors2.pdf Graphic file (type pdf)
 <fig/20231207_1_4s_by_5_2d_ieeesensors2.pdf>
 File: fig/20231220_2_s_by_2_2d_ieeesensors2.pdf Graphic file (type pdf)
 <fig/20231220_2_s_by_2_2d_ieeesensors2.pdf>
-
+ [3]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 36.
-[3]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 40.
 File: fig/reaching_error.pdf Graphic file (type pdf)
@@ -796,19 +798,18 @@ File: fig/time_vs_angle_model_sensor.pdf Graphic file (type pdf)
 <fig/time_vs_angle_model_sensor.pdf>
 File: fig/20240819_r20_reflex_all_plt.pdf Graphic file (type pdf)
 <fig/20240819_r20_reflex_all_plt.pdf>
-
-Underfull \vbox (badness 5893) has occurred while \output is active []
-
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 82.
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 114.
-
-(./tex/discussion.tex
+(Font)              No change on input line 122.
+ (./tex/discussion.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 3.
  [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
@@ -818,14 +819,6 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 26.
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 124.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 126.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 128.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 130.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 132.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 134.
@@ -840,23 +833,32 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 144.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 146.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 148.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 150.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 152.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 154.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 156.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 158.
+
+[6]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 160.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 165.
+(Font)              No change on input line 162.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 164.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 166.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 168.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 173.
 
-[6]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -874,10 +876,10 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  9694 strings out of 480232
  206897 string characters out of 5896229
- 495099 words of memory out of 5000000
+ 494106 words of memory out of 5000000
  27856 multiletter control sequences out of 15000+600000
  509438 words of font info for 147 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  72i,12n,79p,1260b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on regular_lsens.dvi (7 pages, 42744 bytes).
+Output written on regular_lsens.dvi (7 pages, 44168 bytes).
