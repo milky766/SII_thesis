@@ -1,8 +1,4 @@
 \subsection{Parameter Identification}
-Fig. \ref{fig:length_pressure} displays the relationship between the pressure $p$ and the natural length $l_n$ of the PAMs. As assumed, there is a tendency for $l_n$ to decrease linearly with $p$ within the range of the tested pressure. The dashed lines in Fig. \ref{fig:length_pressure} represent the fitted lines using the least squares method, expressed by Eq. (\ref{eq:L_n}).
-Fig. \ref{fig:pam_b_static1} shows the result of the static tensile test for PAM-B. The red and blue points represent the data during expansion and contraction respectively, and the green dashed lines represent the solutions $d$ to Eq. (\ref{eq:model}), which is given by substituting the acquired parameters $a_i$ and the measured $f$ and $p$.
-Generally, PAMs exhibit hysteresis due to friction, so the data differ between expansion and contraction processes. Due to the space constraint, the result of the static tensile test is only presented for PAM-B, but similar results were obtained for the other PAMs.
-
 \begin{figure}[t]
     \hfill
     \begin{minipage}{\columnwidth}
@@ -15,84 +11,36 @@ Generally, PAMs exhibit hysteresis due to friction, so the data differ between e
         \caption{Nonlinearity of Deformation under Different Pressure (PAM-B)}
         \label{fig:pam_b_static1}
     \end{minipage}
-    \hspace{0.05\textwidth} 
 \end{figure}
-
-
-
-
-% \begin{textblock*}{\columnwidth}(11cm,3cm) 
-% \begin{figure}
-%     \centering
-%     \includegraphics[width=\columnwidth]{fig/length_pressure.pdf}
-%     \caption{Relationship between Pressure and Natural Length}
-%     \label{fig:length_pressure}
-% \end{figure}
-% \end{textblock*}
-
-
-% \begin{textblock*}{\columnwidth}(11cm,12cm) 
-% \begin{figure}
-%    \centering
-%    \includegraphics[width=\columnwidth]{fig/20231124_5_4s_2d_ieeesensors1.pdf}
-%    \caption{Relationship between Force and Deformation at Each Pressure (PAM-B)}
-%    \label{fig:pam_b_static1}
-% \end{figure}
-% \end{textblock*}
-
-% % 画像にかからないようにテキスト位置を調整
-% \vspace{40cm} % 必要に応じて調整してください
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=\columnwidth]{fig/length_pressure.pdf}
-%     \caption{Relationship between Pressure and Natural Length}
-%     \label{fig:length_pressure}
-% \end{figure}
-
-% \begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\columnwidth]{fig/20231124_5_4s_2d_ieeesensors1.pdf}
-%    \caption{Relationship between Force and Deformation at Each Pressure (PAM-B)}
-%    \label{fig:pam_b_static1}
-% \end{figure}
-
-
+Fig. \ref{fig:length_pressure} displays the relationship between pressure $p$ and natural length $l_n$ of the PAMs. As assumed, there is a tendency for $l_n$ to decrease linearly with $p$ within the tested pressure range. The dashed lines in Fig. \ref{fig:length_pressure} represent the fitted lines using the least squares method, as expressed by Eq. (\ref{eq:L_n}).
+Fig. \ref{fig:pam_b_static1} shows the result of the static tensile test for PAM-B. The red and blue points represent the measurements during expansion and contraction respectively, and the green dashed lines represent the solutions $d$ to Eq. (\ref{eq:model}), which is given by substituting the predetermined parameters $a_i$ and the measured $f$ and $p$.
+Generally, PAMs exhibit hysteresis caused by friction, so the data differ between expansion and contraction processes. Due to the space constraint, the result of the static tensile test is only presented for PAM-B, but similar results were obtained for the other PAMs.
 \begin{figure*}[h]
    \begin{center}
        \begin{minipage}[t]{\columnwidth} 
            \centering
-           \includegraphics[keepaspectratio, width=\columnwidth]{fig/20231207_1_4s_by_5_2d_ieeesensors1.pdf}
+           \includegraphics[keepaspectratio, width=\columnwidth]{fig/20231207_1_4s_by_5_2d_ieeesensors2.pdf}
            \caption{Dynamic Length Estimation (PAM-B, Rubber)}
            \label{fig:pam_b_dynamic}
        \end{minipage}
        \hfill
        \begin{minipage}[t]{\columnwidth} 
            \centering
-           \includegraphics[keepaspectratio, width=\columnwidth]{fig/20231220_2_s_by_2_2d_ieeesensors1.pdf}
+           \includegraphics[keepaspectratio, width=\columnwidth]{fig/20231220_2_s_by_2_2d_ieeesensors2.pdf}
            \caption{Dynamic Length Estimation (PAM-D, Silicon)}
            \label{fig:pam_d_dynamic}
        \end{minipage}
    \end{center}
 \end{figure*}
 
-\vspace{1cm}
-
-% \begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\columnwidth]{fig/20231207_1_4s_by_5_2d_ieeesensors1.pdf}
-%    \caption{Dynamic length estimation (PAM-B, Rubber)}
-%    \label{fig:pam_b_dynamic}
-% \end{figure}
-\subsection{Error Evaluation} 
-Fig. \ref{fig:pam_b_dynamic} and Fig. \ref{fig:pam_d_dynamic} show the dynamic length estimation results for PAM-B and PAM-D, respectively.
-With the proposed method, with respect to the measurements by the linear encoder, the length estimation was achieved with maximum errors of 1.72 $\%$ for PAM-A, 1.19 $\%$ for PAM-B, 1.18 $\%$ for PAM-C, and  1.65 $\%$ for PAM-D respectively , and with root mean squared errors of 0.861 $\%$ for PAM-A, 0.653 $\%$ for PAM-B, 0.683 $\%$ for PAM-C, and 0.846 $\%$ for PAM-D respectively.
+\subsection{Dynamic Length Estimation} 
+Fig. \ref{fig:pam_b_dynamic} and Fig. \ref{fig:pam_d_dynamic} show the dynamic length estimation for PAM-B and PAM-D, respectively.
+With our model, with respect to the measurements by the linear encoder, the length estimation was achieved with maximum errors of 1.72 $\%$ for PAM-A, 1.19 $\%$ for PAM-B, 1.18 $\%$ for PAM-C, and  1.65 $\%$ for PAM-D respectively , and with root mean squared errors of 0.861 $\%$ for PAM-A, 0.653 $\%$ for PAM-B, 0.683 $\%$ for PAM-C, and 0.846 $\%$ for PAM-D respectively.
 
 \subsection{Reaching Task}
 Table \ref{tab:PAM_reflex} shows the parameters for the length estimation of the agonist and antagonist muscles. The considerable difference in the voltage-force slope $q$ between the two PAMs is attributable to the varying sensitivities of the handmade strain gauges.
 
-Fig.\ref{fig:reaching_error} displays the length estimation errors of the model and the fiber sensor in reaching task. Since the fiber sensor could only measure the rate of length change and not the absolute length, the estimated absolute length by the fiber sensor was calibrated to the measurement of the linear encoder at the start of the reaching task. Therefore, it cannot be said that Fig.\ref{fig:reaching_error} is exactly comparing the estimates from the model and from the fiber sensor, but it serves as a reference for examining the accuracy of the model against the conventional sensor. The reaching task was performed five times for both the agonist and antagonist muscles. For the agonist muscle, with respect to the linear encoder measurement, the model showed a maximum error of 8.82 $\%$ and a root mean squared error of 5.24 $\%$, while the fiber sensor showed a maximum error of 2.51 $\%$ and a root mean squared error of 0.888 $\%$. For the antagonist muscle, the model showed a maximum error of 5.86 $\%$ and a root mean squared error of 5.02 $\%$, while the fiber sensor showed a maximum error of 2.53 $\%$ and a root mean squared error of 1.78 $\%$. 
-
+Fig.\ref{fig:reaching_error} displays the length estimation errors of the model and the fiber sensor in reaching task. Since the fiber sensor could only measure the rate of length change and not the absolute length, the estimation of absolute length by the fiber sensor was calibrated to the measurement of the linear encoder at the start of the reaching task. Therefore, it cannot be said that Fig.\ref{fig:reaching_error} is exactly comparing the estimates from the model and the fiber sensor, but it serves as a reference for examining the accuracy of the model against the conventional sensor. The reaching task was performed five times for both the agonist and antagonist muscles. For the agonist muscle, with respect to the linear encoder measurement, the model showed a maximum error of 8.82 $\%$ with a root mean squared error of 5.24 $\%$, while the fiber sensor showed a maximum error of 2.51 $\%$ with a root mean squared error of 0.888 $\%$. For the antagonist muscle, the model showed a maximum error of 5.86 $\%$ with a root mean squared error of 5.02 $\%$, while the fiber sensor showed a maximum error of 2.53 $\%$ with a root mean squared error of 1.78 $\%$. 
 \begin{table}[H]
     \centering
     \caption{Parameters for Length Estimation} 
@@ -108,7 +56,6 @@ Fig.\ref{fig:reaching_error} displays the length estimation errors of the model 
     } 
     \label{tab:PAM_reflex}
 \end{table}
-
 \begin{figure*}[t]
     \centering
     \begin{minipage}[H]{\textwidth} 
@@ -126,17 +73,14 @@ Fig.\ref{fig:reaching_error} displays the length estimation errors of the model 
         \begin{minipage}[H]{0.48\textwidth} 
             \centering
             \includegraphics[width=\columnwidth]{fig/20240819_r20_reflex_all_plt.pdf}
-            \caption{Dynamic Behavior of Reflex by Model}
+            \caption{Dynamic Behavior of Reflex with Model}
             \label{fig:reflex_all}
         \end{minipage}
     \end{minipage}
 \end{figure*}
 %Accuracy Drop of Length Estimation by Model in Reaching Task
-
-
 \subsection{Stretch Reflex}
-Table \ref{tab:reflex_para} shows the velocity threshold $V_{thr}$ and the feedback gain $k$, and they were determined experimentally by assessing the magnitude of the impact. 
-
+Table \ref{tab:reflex_para} shows the velocity thresholds $V_{thr}$ and the feedback gains $k$, and they were determined experimentally by assessing magnitude of impact from a falling mass. 
 \begin{table}[h]
     \centering
     \caption{Parameters for Stretch Reflex} 
@@ -150,10 +94,8 @@ Table \ref{tab:reflex_para} shows the velocity threshold $V_{thr}$ and the feedb
     \end{tabular}
 \label{tab:reflex_para}
 \end{table}
+Fig. \ref{fig:reflex_all} illustrates the dynamic behavior of the reflex with the model. The starting angle of the arm was -36 deg due to the basket's weight of 83.1 g. When the falling mass made an impact, the angle dropped dramatically, creating sudden soar in the voltage signal from the strain gauge and thus in estimated velocity. It went beyond the threshold and triggered the stretch reflex, leading to an increase in pressure in the agonist muscle and a decrease in the antagonist. The arm was then lifted back to the initial position, and after some oscillation, it settled down to a certain angle, holding the mass left in the basket.
 
-Fig. \ref{fig:reflex_all} illustrates the dynamic behavior of the reflex by the model. The starting angle of the arm was -36 deg due to the basket's weight of 83.1 g. When the falling mass made an impact, the angle dropped dramatically, creating sudden soar in the voltage signal from the strain gauge and thus in the estimated velocity. It went beyond the threshold and triggered the stretch reflex, leading to an increase in pressure in the agonist muscle and a decrease in the antagonist. The arm was then lifted back to the initial position, and after some oscillation, it settled down to a certain angle, holding the mass left in the basket.
-
-
-Fig.\ref{fig:reflex_angle} displays the average and range of angles in 20 trials of the reflexes by the model and by the fiber sensor. Since the thresholds and gains for each reflex are determined experimentally, it is not possible to purely compare the behavior of the arm angles, but it can be said that the reflex by the fiber sensor is well replicated by the model.
+Fig.\ref{fig:reflex_angle} displays the average and range of angles in 20 trials of the reflexes with the model and the fiber sensor. Since the thresholds and gains were determined experimentally, it is impossible to purely compare the behavior of the arm for the two reflexes, but it can be said that the reflex with the fiber sensor was well replicated with the model.
 
 

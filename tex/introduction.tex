@@ -1,33 +1,24 @@
 Soft robots are expected to achieve adaptability to environments like living organisms\cite{rus_design_2015}. 
-Soft robots that coexist with humans have been already realized\cite{Compac,polygerinos_soft_2015} and have been used to understand biological intelligence through a constructive methodology\cite{hosoda,marchese_autonomous}.
+They have already been developed to coexist with humans \cite{Compac,polygerinos_soft_2015}, and have been used to understand biological intelligence through a constructive methodology\cite{hosoda,marchese_autonomous}.
 As actuators in musculoskeletal robots, pneumatic artificial muscles (PAMs) are often used\cite{mirvakili_artificial}.
 PAMs have several advantages over conventional actuators, such as a superior power-to-mass ratio\cite{Dynamic}, high compliance\cite{SDCharacteristics}, and low cost and ease of production\cite{ashwin_survey_2018}.
 % However, their inherent nonlinearity places heavy computational demands on a central control system.
 % To overcome this hurdle, it is proposed to integrate reflex mechanisms found in living organisms into musculoskeletal robots\cite{takahashi}.
 However, PAMs have nonlinearity because they consist of elastic materials, which places heavy computational demands on a central control system.
 
-To overcome this hurdle, it is proposed to integrate reflex mechanisms found in living organisms into musculoskeletal robots\cite{takahashi}.
+To overcome this hurdle, it is proposed to integrate reflex mechanisms found in living organisms into musculoskeletal robots \cite{takahashi}.
 Reflex mechanisms enable local control systems to swiftly respond to environmental changes without commands from a central control system, thereby reducing its computational load. 
 
-One of the reflex mechanisms, the stretch reflex, requires muscle length information\cite{kandel}, but directly measuring PAM length with a sensor poses several challenges\cite{nakajima}.
-Firstly, as a reflex action occurs instantaneously, it might lead to significant problems such as slackness in a wire encoder and light screen in a laser sensor, 
+One of the reflex mechanisms, a stretch reflex, detects the sudden change of muscle length \cite{kandel}, but directly measuring PAM length with a sensor poses several challenges\cite{nakajima}.
+First, since a reflex action occurs instantaneously, it might lead to significant problems such as slackness in a wire encoder or light screen in a laser sensor, 
 which could prevent accurate measurement of the PAM's length. 
-Secondly, because a length sensor needs to be posed at both PAM's ends, it could limit robot design. 
-Thirdly, sensor stiffness might reduce the PAM's flexibility.
+Second, because a length sensor needs to be posed at both PAM's ends, it could limit robot design. 
+Third, sensor stiffness could impair the flexibility of the PAM.
 
 This paper presents a method to estimate the PAM length from its pressure and force instead of directly measuring it with the goal of incorporating the stretch reflex into musculoskeletal robots.
-The proposed model views a PAM as a nonlinear spring, with the spring constant dependent on its pressure. 
-We determined the degrees of the spring constant based on prior models and calculated its coefficients experimentally.
-The effectiveness of the model was demonstrated by evaluating the error in length estimation when pressure varied sinusoidally.
-Then the model was incorporated to the stretch reflex mechanism to maintain a robot arm in a fixed position while the falling mass generated an impact.
-Applying our model allows the sensors to gather at one end of a PAM, simplifying the musculoskeletal robot design. 
-While theoretical models of the PAM cannot accurately reflect individual differences in properties because they require almost immeasurable parameters such as fiber length and the braiding angle of the sleeve\cite{motion}, 
-our experimental approach calculates coefficients for each PAM, gaining comprehensive applicability to PAMs of various materials and shapes.
-% 生物を模倣した柔らかいロボット，ソフトロボットは,生物のもつ適応性を実現できると考えられている.
-% 特に筋骨格ロボットのアクチュエータとして空気圧人工筋がしばしば使用されるが,その非線形性は中央制御系に大きな計算負荷をかける.
-% この問題を解決するために,生物に見られる反射機構をロボットに搭載することが提案されている\cite{takahashi}.
-% 反射機構は,中央制御系を介さずに局所制御系が外乱を補償し,ロボットの環境への応答性を高める.
-% 脊髄反射の一種である伸長反射は,筋の長さの情報を必要とするが,長さセンサを使用して筋の全長を直接測定することは難しい.
-% 第一に,リニアエンコーダのワイヤの緩みやレーザセンサの光の遮蔽といった計測上の問題がある.第二に,長さセンサは筋の両端の位置情報を必要とするため,センサの配置がロボットの設計に成約を課す.第三に,センサの硬さが筋の柔らかさを損なう可能性がある.
-
-% 本論文では,空気圧人工筋駆動のロボットに伸張反射を実装するために,筋の圧力と張力から長さを推定する方法を提案する.提案モデルでは,空気圧人工筋をバネ定数が圧力と自然長からの変形量に依存する非線形性バネとみなす.バネ定数の次数は先行のモデルを参考に決定し,その係数は実験により取得する.その後,圧力を三角関数的に変化させたときの長さ推定の誤差を計測し,実際の駆動方式においても提案モデルが有効であることを示す.提案モデルを適用すれば,空気圧人工筋の片端にセンサを集約させることができるので,筋骨格ロボットの構造が単純になる.また,空気圧人工筋の種々の理論的モデルは,スリーブ繊維の全長や編込みの角度といった,個体差の大きい各種パラメータを多く含むので,長さ推定時に正確に各筋の特性を反映させることは難しいが,提案モデルは実験的に推定パラメータを取得するので,あらゆる材料や形状の空気圧人工筋に対して包括的である.
+The model views a PAM as a nonlinear spring, and the spring constant is dependent on its deformation and pressure. 
+We determined the dimensions of the spring constant based on prior models and determined its coefficients experimentally.
+The effectiveness of the model was demonstrated by evaluating the errors in length estimation when pressure varied sinusoidally.
+The model was subsequently incorporated to the stretch reflex mechanism and required to maintain a robot arm in a fixed position while the falling mass generated an impact.
+The dynamic response of the reflex with the model was then compared to that with a conventional sensor. 
+Theoretical models of the PAM often have difficulty in accurately capturing individual differences in properties because they rely on almost immeasurable parameters, such as the total length of braided fibers or their braiding angle\cite{motion}. However, our approach overcomes this limitation by experimentally determining coefficients for each PAM and thus reflecting their characteristic. Applying our model not only offers broad applicability to PAMs of various materials and shapes, but also allows the sensors to gather at one end of a PAM, simplifying the robotic design. 

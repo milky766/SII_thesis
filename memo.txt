@@ -1,6 +1,4 @@
 
 タイトル考え直す?
 
-
-reaching taskの最初の3秒とそれ以降の時間の誤差を分けて計算して、tensionがなくなる前後の誤差の変動について言及してもいいかも
-reaching taskのエラーの図差し替えたので、エラーを計算し直す
+the lengthやthe pressure of the PAM のthe がいるかどうか

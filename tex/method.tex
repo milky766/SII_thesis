@@ -1,22 +1,20 @@
 \subsection{Parameter Identification}
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=\columnwidth]{fig/static_experiment.pdf}
     \caption{Outline Diagram of Static Tensile Test}
     \label{fig:static_equipment}
  \end{figure}
-
-Fig. \ref{fig:static_equipment} is an outline diagram of the static tensile test to identify the parameters $m$, $h$, and $a_i$ .
+Fig. \ref{fig:static_equipment} is an outline diagram of the static tensile test to identify the parameters $m$, $h$, and $a_i$.
 Table \ref{tab:PAM} lists the shapes and materials of the four experimented PAMs (A,B,C,D).
 The experimental procedure was as follows.
-First, the pressure $p$ was adjusted to a constant level.
-Taking into account the strength of the materials, the pressure of PAM-A, PAM-B, or PAM-C was adjusted to 0.4 $\si{MPa}$, 0.5 $\si{MPa}$, 0.6 $\si{MPa}$, 0.7$\si{MPa}$ or 0.8 $\si{MPa}$, while the pressure of PAM-D was 0.2 $\si{MPa}$, 0.3 $\si{MPa}$, 0.4 $\si{MPa}$, 0.5 $\si{MPa}$, or 0.6 $\si{MPa}$.
-Next, the PAM was gradually stretched from the natural length by 2.5 $\si{mm}$ increments and the deformation $d$, the force $f$, and the pressure $p$ were measured at each point.
+First, pressure $p$ was adjusted to a constant level.
+Considering the strength of the materials, pressure of PAM-A, PAM-B, or PAM-C was adjusted to 0.4 $\si{MPa}$, 0.5 $\si{MPa}$, 0.6 $\si{MPa}$, 0.7$\si{MPa}$ or 0.8 $\si{MPa}$, while pressure of PAM-D was 0.2 $\si{MPa}$, 0.3 $\si{MPa}$, 0.4 $\si{MPa}$, 0.5 $\si{MPa}$, or 0.6 $\si{MPa}$.
+Next, the PAM was gradually stretched from natural length $l_n$ by 2.5 $\si{mm}$ increments, and deformation $d$ and force $f$ were measured at each point.
 Each value was stabilized by waiting for at least 2 seconds after deformation.
-Once $d$ reached its maximum value predetermined based on each PAM's strength, it was contracted to the natural length $l_n$ by  $2.5\si{mm}$ decrements, and $d$, $p$, and $f$ were measured again at each point.
+Once $d$ reached its maximum value predetermined based on each PAM's strength, it was contracted to $l_n$ by $2.5\si{mm}$ decrements, and $d$ and $f$ were measured again at each point.
 Finally, the parameters $m$, $h$, and $a_i$ were calculated by the least squares method.
-The pressure sensor used was PSE540 (SMC Co.), the linear encoder was DS-025 (MUTOH INDUSTRIES Co. Ltd.), and the force gauge was FGP-5 (Nidec Co.).
+The adapted pressure sensor was PSE540 (SMC Co.), the linear encoder was DS-025 (MUTOH INDUSTRIES Co. Ltd.), and the force gauge was FGP-5 (Nidec Co.).
 
 \begin{table}[h]
     \centering
@@ -36,11 +34,10 @@ The pressure sensor used was PSE540 (SMC Co.), the linear encoder was DS-025 (MU
 \label{tab:PAM}
 \end{table}
 
-
-\subsection{Error Evaluation}
-We dynamically estimated the length of the four different PAMs to verify the general applicability of the model.
-The jig holding the left end of the PAM in Fig. \ref{fig:static_equipment} was removed and a pulley was installed in its place. A proportional control valve was installed between the pressure sensor and the compressor.
-The experimental procedure was as follows. First, a weight of either 5 $\si{kg}$ or 10 $\si{kg}$ was connected to the PAM via the pulley to apply a constant force $f$. Next, considering the strength of each PAM, the pressure $p [\si{MPa}]$ was varied over time $t [\si{s}]$ by the proportional control valve according to 
+\subsection{Dynamic Length Estimation}
+We dynamically estimated length of the four PAMs to verify general applicability of the model.
+A jig holding the left end of a PAM in Fig. \ref{fig:static_equipment} was replaced with a pulley, and a proportional control valve was installed between the pressure sensor and a compressor.
+The experimental procedure was as follows. First, a weight of either 5 $\si{kg}$ or 10 $\si{kg}$ was connected to the PAM via the pulley to apply a constant force. Next, considering the strength of each PAM, the pressure $p [\si{MPa}]$ was varied over time $t [\si{s}]$ by the proportional control valve according to
 \begin{equation}
 p = 0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.6
 \label{eq:Pref}
@@ -54,23 +51,22 @@ for PAM-D. At each time, $f$, $p$, and the length $l$ were measured.
 Finally, the errors were calculated between the measured and estimated length.
 
 \subsection{Reaching Task}
-We conducted a reaching experiment to see the errors when the model is actually incorporated into a robot arm. The system developed by Takahashi et al.\cite{takahashi} was adapted and positioned vertically. The system consisted of an arm with a pair of PAMs, an agonist muscle and an antagonist muscle, and their shapes and materials are listed in Table \ref{tab:PAM}. The muscles were connected to the arm with fishing line via shafts, and foil strain gauges (KFP-5-120-C1-65L1M2R, Kyowa Electronic Instrument Co. Ltd.) based on acrylic boards were attached to one end of each muscle.
-We also wrapped the fiber sensor developed by Hitzmann et al. \cite{fiber} around the PAMs, which assesses the rate of length change by detecting variations in resistance, thereby calculating the rate of diameter change. around the PAMs to estimate the rate of length change by measuring the change in resistance and thus determining the rate of change in the diameter of a PAM.
-The reaching movement was achieved by linearly increasing the pressure of the agonist muscle from 0.2 $\si{MPa}$ to 0.6 $\si{MPa}$ while simultaneously decreasing the pressure of the antagonist muscle from 0.6 $\si{MPa}$ to 0.2 $\si{MPa}$. During the reaching movement, the length of the PAM was measured with the linear encoder while it was estimated by the fiber sensor and our model, and the errors were then calculated. The experiment time was $12 \si{s}$, and the sampling frequency was set to 100 $\si{Hz}$.
+We conducted reaching experiments to see errors when the model is actually incorporated into a robot arm. The system developed by Takahashi et al.\cite{takahashi} was adapted and positioned vertically. The system consisted of an arm with a pair of PAMs, an agonist muscle and an antagonist, and their shapes and materials are listed in Table \ref{tab:PAM}. The PAMs were connected to the arm with fishing line via shafts, and foil strain gauges (KFP-5-120-C1-65L1M2R, Kyowa Electronic Instrument Co. Ltd.) based on acrylic boards were attached to one end of each PAM.To validate the performance of the model in comparison with a conventional method, we wrapped the PAMs with conductive fiber sensors developed by Hitzmann et al. \cite{fiber}, which assesses the rate of change in length by detecting variations in resistance and thereby calculating the rate of change in diameter.
+The reaching movement was achieved by linearly increasing the pressure of the agonist muscle from 0.2 $\si{MPa}$ to 0.6 $\si{MPa}$ while simultaneously decreasing the pressure of the antagonist from 0.6 $\si{MPa}$ to 0.2 $\si{MPa}$. During the reaching movement, the length of the PAM was measured with the linear encoder while it was estimated by the model and the fiber sensor, and the errors were calculated. The experiment time was 12 $\si{s}$, and the sampling frequency was set to 100 $\si{Hz}$.
 
-During the experiment, the change in resistance of the strain gauges went to a quarter Wheatstone bridge circuit where the three resistors other than the strain gauge were $120 \pm 0.5 \Omega$. Unlike the force gauge, which can directly measure the force of the PAMs, voltage signal from the circuit was converted to force according to Eq. (\ref{eq:voltage}). Eq. (\ref{eq:voltage}) assumes that the voltage is a linear function of force because the voltage from the Wheatstone bridge circuit is proportional to the strain\cite{wheatstone} and the strain is proportional to the force while the material is elastically deformed.
+During the experiment, the change in resistance of the strain gauges went to a quarter Wheatstone bridge circuit where three other resistors were $120 \pm 0.5 \Omega$, and voltage signal from the circuit was converted to force according to Eq. (\ref{eq:voltage}). Eq. (\ref{eq:voltage}) assumes that voltage is a linear function of force because voltage of a Wheatstone bridge circuit is proportional to strain\cite{wheatstone} and strain is proportional to force while material elastically deforms.
 \begin{equation}
     \label{eq:voltage}
     V=qf+V_{base}
 \end{equation}
-$V$ is the voltage signal from the strain gauge, $q$ is the slope of voltage to force, and $V_{base}$ is the base voltage when no force is applied.
-The parameters $q$ was obtained by measuring the voltage and the force while statically loading the strain gauges.
-Eq.(\ref{eq:voltage}) can be rewritten as 
+$V$ is the voltage signal from the strain gauge, $q$ is the slope of voltage to force, and $V_{base}$ is the voltage when no force is applied.
+The parameter $q$ was obtained by measuring voltage and force while statically loading the strain gauge.
+Eq.(\ref{eq:voltage}) can be rewritten as
 \begin{equation}
     \label{eq:voltage_2}
     f = \frac{1}{q}\Delta V
 \end{equation}
-where $\Delta V = V - V_{base}$. Substituting Eq.(\ref{eq:voltage_2}) into Eq.(\ref{eq:model}) gives
+where $\Delta V = V - V_{base}$. Substituting Eq. (\ref{eq:voltage_2}) into Eq. (\ref{eq:model}) gives
 \begin{equation}
     \label{eq:model_voltage}
     \Delta V = (a'_3pd + a'_2p + a'_1d + a'_0)d
@@ -85,24 +81,24 @@ in which $a'_i=qa_i$, and the deformation $d$ can be calculated by solving this 
     \label{fig:reflex_equipment}
  \end{figure}
 Fig. \ref{fig:reflex_equipment} is an outline diagram of the stretch reflex experiment.
-The arm was equipped with the basket and expected to keep it in a fixed position by maintaining the pressure of both PAMs at 0.4 $\si{MPa}$, and a 0.2 $\si{kg}$ mass was dropped from a height of 14 $\si{cm}$ to make an impact. During the experiment, the velocity of the PAMs was calculated as 
+The arm was equipped with the basket and expected to keep it in a fixed position by maintaining the pressure of both PAMs at 0.4 $\si{MPa}$, and a 0.2 $\si{kg}$ mass was dropped from a height of 14 $\si{cm}$ to make an impact. During the experiment, velocities of the PAMs were calculated as
 \begin{equation}
     \label{eq:velocity}
     v_j = \frac{l_j -l_{j-1}}{dt}
 \end{equation}
 where $j$ is the sampling number, $l_j$ is the estimated length, and $dt$ is the sampling period.
 Since the system was set to 100 $\si{Hz}$, $dt$ was 0.01 $\si{s}$.
-When the impact rapidly stretched the agonist PAM and its velocity exceeded a predetermined threshold, the stretch reflex was induced for 200 $\si{ms}$. The pressure command from the stretch reflex mechanism converged to the goal pressure from a top controller as follows:
+When the impact rapidly stretched the agonist PAM and its velocity exceeded a predetermined threshold, the stretch reflex was induced for 200 $\si{ms}$. The pressure command from the stretch reflex mechanism converged to the goal pressure from a top controller as follows
 \begin{align}
     \label{eq:command_pressure}
     p_{ago} &= p_{tp - ago} + \Delta p_{ago - exci} - \Delta p_{anta - inhi} \\
     p_{anta} &= p_{tp - anta} + \Delta p_{anta - exci} - \Delta p_{ago - inhi}
 \end{align}
-in which $p_{tp}$ is the goal pressure from the top controller,$\Delta p_{exci}$ is the excitatory pressure, and $ \Delta p_{inhi}$ is the reciprocal inhibition pressure. 
-$\Delta p_{exci}$ and $\Delta p_{inhi}$ were calculated by the following equations:
+in which $p_{tp}$ is the goal pressure from the top controller, $\Delta p_{exci}$ is the excitatory pressure from the reflex mechanism, and $ \Delta p_{inhi}$ is the reciprocal inhibition pressure. 
+$\Delta p_{exci}$ and $\Delta p_{inhi}$ were calculated by the following equation
 \begin{equation}
     \label{eq:reflex_pressure}
     \Delta p_{exci} =  \Delta p_{inhi} = kv
 \end{equation}
 where $k$ is the gain determined experimentally.
-Takahashi et al. designed this command process inspired by $\alpha$ motor neurons located in human spinal cords\cite{takahashi}. The positioning task was executed with stretch by the model and by the fiber sensor, and the reactions were compared.
+Takahashi et al. designed this command process inspired by $\alpha$ motor neurons in human spinal cords \cite{takahashi}. The positioning tasks were conducted applying the stretch reflexes both with the model and the fiber sensor, and the reaction behaviors were compared.

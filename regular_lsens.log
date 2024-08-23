@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.8.20)  22 AUG 2024 13:01
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.8.20)  23 AUG 2024 10:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,14 +718,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--89
  []
 
 
-Underfull \hbox (badness 5548) in paragraph at lines 89--89
-\OT1/ptm/m/n/8 Grad-u-ate School of En-gi-neer-ing, Ky-oto Uni-ver-sity, Ky-oto
-, Japan
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/ptm/m/n/8 Hosoda are with De-part-ment of Me-chan-i-cal En-gi-neer-ing and
+
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 89--89
+\OT1/ptm/m/n/8 Sci-ence, Grad-u-ate School of En-gi-neer-ing, Ky-oto Uni-ver-si
+ty, Ky-oto,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 89--89
-\OT1/pcr/m/n/9 email:yoshida.mizuki.68s@st.kyoto-u.ac.jp,
+\OT1/ptm/m/n/8 Japan \OT1/pcr/m/n/9 yoshida.mizuki.68s@st.kyoto-u.ac.jp,
  []
 
 
@@ -759,20 +765,14 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 File: fig/static_experiment.pdf Graphic file (type pdf)
 <fig/static_experiment.pdf>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 40.
+(Font)              No change on input line 37.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 56.
+(Font)              No change on input line 53.
  [2]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 80.
+(Font)              No change on input line 76.
 File: fig/reflex_experiment.pdf Graphic file (type pdf)
 <fig/reflex_experiment.pdf>
-
-Underfull \hbox (badness 6927) in paragraph at lines 100--103
-\OT1/ptm/m/n/10 in which $\OML/cmm/m/it/10 p[]$ \OT1/ptm/m/n/10 is the goal pre
-s-sure from the top
- []
-
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 111.
@@ -783,45 +783,46 @@ File: fig/length_pressure.pdf Graphic file (type pdf)
 <fig/length_pressure.pdf>
 File: fig/20231124_5_4s_2d_ieeesensors1.pdf Graphic file (type pdf)
 <fig/20231124_5_4s_2d_ieeesensors1.pdf>
+File: fig/20231207_1_4s_by_5_2d_ieeesensors2.pdf Graphic file (type pdf)
+<fig/20231207_1_4s_by_5_2d_ieeesensors2.pdf>
+File: fig/20231220_2_s_by_2_2d_ieeesensors2.pdf Graphic file (type pdf)
+<fig/20231220_2_s_by_2_2d_ieeesensors2.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--19
-
- []
-
-File: fig/20231207_1_4s_by_5_2d_ieeesensors1.pdf Graphic file (type pdf)
-<fig/20231207_1_4s_by_5_2d_ieeesensors1.pdf>
-File: fig/20231220_2_s_by_2_2d_ieeesensors1.pdf Graphic file (type pdf)
-<fig/20231220_2_s_by_2_2d_ieeesensors1.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 87.
+(Font)              No change on input line 36.
 [3]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 91.
+(Font)              No change on input line 40.
 File: fig/reaching_error.pdf Graphic file (type pdf)
 <fig/reaching_error.pdf>
 File: fig/time_vs_angle_model_sensor.pdf Graphic file (type pdf)
 <fig/time_vs_angle_model_sensor.pdf>
 File: fig/20240819_r20_reflex_all_plt.pdf Graphic file (type pdf)
 <fig/20240819_r20_reflex_all_plt.pdf>
+
+Underfull \vbox (badness 5893) has occurred while \output is active []
+
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 137.
- [4])
+(Font)              No change on input line 82.
+)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 114.
- (./tex/discussion.tex
+
+(./tex/discussion.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1.
+(Font)              No change on input line 3.
+ [4]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 23.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 22.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 30.
+(Font)              No change on input line 28.
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 124.
@@ -857,13 +858,12 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 156.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 158.
-
-[6]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 160.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 165.
 
+[6]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -879,12 +879,12 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./regular_lsens.aux) ) 
 Here is how much of TeX's memory you used:
- 9694 strings out of 479777
- 206897 string characters out of 5885796
- 496790 words of memory out of 5000000
- 27892 multiletter control sequences out of 15000+600000
+ 9694 strings out of 478741
+ 206897 string characters out of 5860982
+ 499896 words of memory out of 5000000
+ 27984 multiletter control sequences out of 15000+600000
  509438 words of font info for 147 fonts, out of 8000000 for 9000
- 309 hyphenation exceptions out of 8191
- 72i,11n,79p,1232b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 929 hyphenation exceptions out of 8191
+ 72i,12n,79p,1299b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on regular_lsens.dvi (7 pages, 42932 bytes).
+Output written on regular_lsens.dvi (7 pages, 42836 bytes).
