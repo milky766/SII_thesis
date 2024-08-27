@@ -93,12 +93,25 @@ When the impact rapidly stretched the agonist PAM and its velocity exceeded a pr
     \label{eq:command_pressure}
     p_{ago} &= p_{tp - ago} + \Delta p_{ago - exci} - \Delta p_{anta - inhi} \\
     p_{anta} &= p_{tp - anta} + \Delta p_{anta - exci} - \Delta p_{ago - inhi}
+    \label{eq:command_pressure_2}
 \end{align}
 in which $p_{tp}$ is the goal pressure from the top controller, $\Delta p_{exci}$ is the excitatory pressure from the reflex mechanism, and $ \Delta p_{inhi}$ is the reciprocal inhibition pressure. 
-$\Delta p_{exci}$ and $\Delta p_{inhi}$ were calculated by the following equation
+$\Delta p_{exci}$ and $\Delta p_{inhi}$ were calculated by the following equation.
 \begin{equation}
     \label{eq:reflex_pressure}
     \Delta p_{exci} =  \Delta p_{inhi} = kv
 \end{equation}
-where $k$ is the gain determined experimentally.
-Takahashi et al. designed this command process inspired by $\alpha$ motor neurons in human spinal cords \cite{takahashi}. The positioning tasks were conducted applying the stretch reflexes both with the model and the fiber sensor, and the reaction behaviors were compared.
+The velocity thresholds $V_{thr}$ and the feedback gains $k$ were predetermined experimentally as shown in Table \ref{tab:reflex_para} by assessing magnitude of impact from a falling mass. Takahashi et al. designed the reflex command Eq. (\ref{eq:command_pressure}) and Eq. (\ref{eq:command_pressure_2}) inspired by $\alpha$ motor neurons in human spinal cords \cite{takahashi}. The positioning tasks were conducted applying the stretch reflexes both with the model and the fiber sensor, and the reaction behaviors were compared.
+\begin{table}[h]
+    \centering
+    \caption{Parameters for Stretch Reflex} 
+    \begin{tabular}{c|cc}
+        \hline
+        PAM &$V_{thr} [\si{mm/s}]$&$ k [\si{GPa\cdot s}]$\\
+        \hline \hline
+        Model & 70 & 1/800\\
+        Fiber Sensor & 25 & 1/300\\
+        \hline
+    \end{tabular}
+\label{tab:reflex_para}
+\end{table}

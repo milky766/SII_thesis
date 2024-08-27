@@ -2,17 +2,11 @@
 \setcounter{subsection}{1} 
 \subsection{Dynamic Length Estimation}
 To improve the accuracy of length estimation, we expanded Eq. (\ref{eq:model}) by adding the terms $p^2$ and $d^2$ and increasing the parameters as follows
-\begin{equation}
-\label{eq:model_2d(1)}
-f = (b_5p^2 + b_4pd + b_3d^2 + b_2p+b_1d+b_0)d
-\end{equation}
+
 As a result, with respect to the measurements by the linear encoder, the dynamic length estimation was achieved with the maximum errors of 1.12 $\%$ for PAM-A, 0.773 $\%$ for PAM-B, 1.01 $\%$ for PAM-C, and 0.755 $\%$ for PAM-D respectively, and with root mean squared errors of 0.633 $\%$ for PAM-A, 0.353 $\%$ for PAM-B, 0.548 $\%$ for PAM-C, and 0.435 $\%$ for PAM-D respectively. The errors were reduced for all the PAMs as expected. 
 
 We also tried another approach by introducing a cubic polynomial model and increasing the parameters as follows
-\begin{equation}
-    \label{eq:model_3d}
-    f = (c_4p^3+c_3p^2d+c_2pd^2+c_1d^2+c_0)d
-\end{equation}
+
 As predicted, the root mean squared errors decreased to 0.516 $\%$ for PAM-A, 0.484 $\%$ for PAM-B, 0.500 $\%$ for PAM-C, and 0.606 $\%$ for PAM-D respectively. 
 However, even though the maximum errors decreased to 1.22 $\%$ for PAM-A and 0.951 $\%$ for PAM-C respectively, they actually increased to 1.41 $\%$ for PAM-B and 1.99 $\%$ for PAM-D respectively. This result suggests that, even if the coefficients of the model equation are determined experimentally, the dimension must be carefully determined based on previous studies to accurately express intrinsic characteristics of the PAM. For example, the newly added term $p^3$ may have amplified the error of the pressure sensor. When applying the model to a reflex mechanism, it is also necessary to carefully consider the contribution of each term to the accuracy of the length estimation based on the reliability of the force and pressure sensors.
 

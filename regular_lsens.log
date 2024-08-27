@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.8.20)  27 AUG 2024 13:46
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2024.8.20)  27 AUG 2024 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,7 +558,11 @@ TextBlockOrigin set to 0pt x 0pt
 )
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 87.
- (./regular_lsens.aux)
+ (./regular_lsens.aux
+
+LaTeX Warning: Label `tab:PAM_reflex' multiply defined.
+
+)
 \openout1 = `regular_lsens.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
@@ -746,10 +750,10 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
  (./tex/introduction.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 108.
- (./tex/model.tex) [1
+ (./tex/model.tex [1
 
 
-]
+])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 111.
 
@@ -781,41 +785,39 @@ File: fig/20231207_1_4s_by_5_2d_ieeesensors2.pdf Graphic file (type pdf)
 <fig/20231207_1_4s_by_5_2d_ieeesensors2.pdf>
 File: fig/20231220_2_s_by_2_2d_ieeesensors2.pdf Graphic file (type pdf)
 <fig/20231220_2_s_by_2_2d_ieeesensors2.pdf>
-
+ [3]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 36.
-[3]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 40.
+(Font)              No change on input line 62.
 File: fig/reaching_error.pdf Graphic file (type pdf)
 <fig/reaching_error.pdf>
 File: fig/time_vs_angle_model_sensor.pdf Graphic file (type pdf)
 <fig/time_vs_angle_model_sensor.pdf>
 File: fig/20240819_r20_reflex_all_plt.pdf Graphic file (type pdf)
 <fig/20240819_r20_reflex_all_plt.pdf>
-
-Underfull \vbox (badness 5893) has occurred while \output is active []
-
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 82.
+(Font)              No change on input line 125.
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 117.
-
-(./tex/discussion.tex
+ (./tex/discussion.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 3.
  [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [5]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 21.
+(Font)              No change on input line 15.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 26.
+(Font)              No change on input line 20.
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
 (Font)              No change on input line 127.
@@ -839,6 +841,8 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 148.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 152.
+
+[6]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 154.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -865,14 +869,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[6] (./regular_lsens.aux) ) 
+[7
+
+] (./regular_lsens.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9693 strings out of 479777
- 206874 string characters out of 5885796
- 496821 words of memory out of 5000000
- 27891 multiletter control sequences out of 15000+600000
+ 9695 strings out of 479777
+ 206909 string characters out of 5885796
+ 500877 words of memory out of 5000000
+ 27893 multiletter control sequences out of 15000+600000
  509438 words of font info for 147 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
  72i,12n,79p,1260b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on regular_lsens.dvi (6 pages, 42216 bytes).
+Output written on regular_lsens.dvi (7 pages, 45644 bytes).

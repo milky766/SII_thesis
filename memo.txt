@@ -1,1 +1,18 @@
 参考文献の順番注意
+
+qもmethodのところに移す?
+
+abstract: 
+-"This paper introduces a method to realize stretch reflexes in musculoskeletal robots without length sensors." - you might want to clarify that the normal stretch reflexes usually need length sensors.
+
+introduction: 
+-"... One of the reflex mechanism in the human body, a stretch reflex, detects the sudden change of muscle length [10] and protects the muscle from overstretching..." I can see this argument is partially from my word XD, but this argument is mainly about the impact of the reflex instead of the Nonlinear Spring Model (cool name btw). Instead just put the next paragraph after this, you might want to add something to smoothly bring out your model. Ex:"why PAM -> whats not good for PAM -> reflex is one of the solution -> but the reflex has a hard time to measure and convert the length with tension and pressure, etc... -> I got a model that can get rid of length sensor and still work!"
+- the last two part in the example above is kind of like what you did in the last paragraph (the need of senseless length measuring), you might want to move it ahead and adjust its narrative structure to fit in the new order. 
+
+Result: 
+- the methods of reflex is wrote in the result part, you might want to move it back up in the method part with the model. The reflex parameters, although you obtained it via experiment, should be consider as the mean instead of the end in this narrative.
+Discussion:
+- im not sure if the expanded Eq(3) is introduced in method part before, if not, you might want to move them up as well, I did the same mistake while trying to deal with the time-series based, long logical relationship between functions in my RAL as well, but it will be rather easy to keep the classical method-result-discussion structure for your case.
+
+The rest of the arguments look good enough for me :)
+
