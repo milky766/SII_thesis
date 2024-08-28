@@ -1,10 +1,4 @@
 \subsection{Parameter Identification}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\columnwidth]{fig/static_experiment.pdf}
-    \caption{Outline Diagram of Static Tensile Test}
-    \label{fig:static_equipment}
- \end{figure}
 Fig. \ref{fig:static_equipment} is an outline diagram of the static tensile test to identify the parameters $m$, $h$, and $a_i$.
 Table \ref{tab:PAM} lists the shapes and materials of the four experimented PAMs (A,B,C,D).
 The experimental procedure was as follows.
@@ -15,24 +9,6 @@ Each value was stabilized by waiting for at least 2 seconds after deformation.
 Once $d$ reached its maximum value predetermined based on each PAM's strength, it was contracted to $l_n$ by $2.5\si{mm}$ decrements, and $d$ and $f$ were measured again at each point.
 Finally, the parameters $m$, $h$, and $a_i$ were calculated by the least squares method.
 The adapted pressure sensor was PSE540 (SMC Co.), the linear encoder was DS-025 (MUTOH INDUSTRIES Co. Ltd.), and the force gauge was FGP-5 (Nidec Co.).
-
-\begin{table}[h]
-    \centering
-    \caption{Characteristics of Experimented PAMs}
-    \begin{tabular}{c|ccccc}
-        \hline
-        PAM & Length [$\si{mm}$] & Diameter [$\si{mm}$] & bladder Material\\
-        \hline \hline
-        A & 216 & 19.9 &  Rubber \\
-        B &211  & 13.4 &  Rubber \\
-        C & 141 & 13.4 &  Rubber \\
-        D & 212 & 19.0 & Silicon \\
-        Agonist & 180 & 16.0 & Rubber \\
-        Antagonist & 180 & 16.1 & Rubber \\
-        \hline
-    \end{tabular}
-\label{tab:PAM}
-\end{table}
 
 \subsection{Dynamic Length Estimation}
 We dynamically estimated length of the four PAMs to verify general applicability of the model.
@@ -49,9 +25,32 @@ p = 0.2 \sin\left(\frac{2 \pi t}{5}\right) + 0.4
 \end{equation}
 for PAM-D. At each time, $f$, $p$, and the length $l$ were measured. 
 Finally, the errors were calculated between the measured and estimated length.
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{fig/static_experiment.pdf}
+    \caption{Outline Diagram of Static Tensile Test}
+    \label{fig:static_equipment}
+ \end{figure}
+ \begin{table}[t]
+    \centering
+    \caption{Characteristics of Experimented PAMs}
+    \begin{tabular}{c|ccccc}
+        \hline
+        PAM & Length [$\si{mm}$] & Diameter [$\si{mm}$] & bladder Material\\
+        \hline \hline
+        A & 216 & 19.9 &  Rubber \\
+        B &211  & 13.4 &  Rubber \\
+        C & 141 & 13.4 &  Rubber \\
+        D & 212 & 19.0 & Silicone \\
+        Agonist & 180 & 16.0 & Rubber \\
+        Antagonist & 180 & 16.1 & Rubber \\
+        \hline
+    \end{tabular}
+\label{tab:PAM}
+\end{table}
 
 \subsection{Reaching Task}
-We conducted reaching experiments to see errors when the model is actually incorporated into a robot arm. The system developed by Takahashi et al.\cite{takahashi} was adapted and positioned vertically. The system consisted of an arm with a pair of PAMs, an agonist muscle and an antagonist, and their shapes and materials are listed in Table \ref{tab:PAM}. The PAMs were connected to the arm with fishing line via shafts, and foil strain gauges (KFP-5-120-C1-65L1M2R, Kyowa Electronic Instrument Co. Ltd.) based on acrylic boards were attached to one end of each PAM.To validate the performance of the model in comparison with a conventional method, we wrapped the PAMs with conductive fiber sensors developed by Hitzmann et al. \cite{fiber}, which assesses the rate of change in length by detecting variations in resistance and thereby calculating the rate of change in diameter.
+We conducted reaching experiments to see errors when the model is actually incorporated into a robot arm. The system developed by Takahashi et al.\cite{takahashi} was adapted and positioned vertically. The system consisted of an arm with a pair of PAMs, an agonist muscle and an antagonist, and their shapes and materials are listed in Table \ref{tab:PAM}. The PAMs were connected to the arm with fishing line via shafts, and foil strain gauges (KFP-5-120-C1-65L1M2R, Kyowa Electronic Instrument Co. Ltd.) based on acrylic boards were attached to one end of each PAM. To validate the performance of the model in comparison with a conventional method, we wrapped the PAMs with conductive fiber sensors developed by Hitzmann et al. \cite{fiber}, which assesses the rate of change in length by detecting variations in resistance and thereby calculating the rate of change in diameter.
 The reaching movement was achieved by linearly increasing the pressure of the agonist muscle from 0.2 $\si{MPa}$ to 0.6 $\si{MPa}$ while simultaneously decreasing the pressure of the antagonist from 0.6 $\si{MPa}$ to 0.2 $\si{MPa}$. During the reaching movement, the length of the PAM was measured with the linear encoder while it was estimated by the model and the fiber sensor, and the errors were calculated. The experiment time was 12 $\si{s}$, and the sampling frequency was set to 100 $\si{Hz}$.
 
 During the experiment, the change in resistance of the strain gauges went to a quarter Wheatstone bridge circuit where three other resistors were $120 \pm 0.5 \Omega$, and voltage signal from the circuit was converted to force according to Eq. (\ref{eq:voltage}). Eq. (\ref{eq:voltage}) assumes that voltage is a linear function of force because voltage of a Wheatstone bridge circuit is proportional to strain\cite{wheatstone} and strain is proportional to force while material elastically deforms.
@@ -102,16 +101,3 @@ $\Delta p_{exci}$ and $\Delta p_{inhi}$ were calculated by the following equatio
     \Delta p_{exci} =  \Delta p_{inhi} = kv
 \end{equation}
 The velocity thresholds $V_{thr}$ and the feedback gains $k$ were predetermined experimentally as shown in Table \ref{tab:reflex_para} by assessing magnitude of impact from a falling mass. Takahashi et al. designed the reflex command Eq. (\ref{eq:command_pressure}) and Eq. (\ref{eq:command_pressure_2}) inspired by $\alpha$ motor neurons in human spinal cords \cite{takahashi}. The positioning tasks were conducted applying the stretch reflexes both with the model and the fiber sensor, and the reaction behaviors were compared.
-\begin{table}[h]
-    \centering
-    \caption{Parameters for Stretch Reflex} 
-    \begin{tabular}{c|cc}
-        \hline
-        PAM &$V_{thr} [\si{mm/s}]$&$ k [\si{GPa\cdot s}]$\\
-        \hline \hline
-        Model & 70 & 1/800\\
-        Fiber Sensor & 25 & 1/300\\
-        \hline
-    \end{tabular}
-\label{tab:reflex_para}
-\end{table}

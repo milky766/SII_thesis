@@ -19,13 +19,10 @@ f = (a_3pd + a_2p + a_1d + a_0)d
 \end{equation}
 The terms $pd^2$ and $d^2$ can be found in Chou et al.'s fundamental model\cite{chouMeasurementModelingMcKibben1996}, which capture the essential dynamic properties of the PAM. The term $pd$  comes from Tondu et al.'s model\cite{ModelingControl} to more accurately reflect differences in the shape of the PAM. The term $d$ is added based on Ferraresi et al.'s model\cite{Comparison} to account for differences in material. The constants $a_0 \sim a_3$ in Eq. (\ref{eq:model}) are determined by the static tensile tests, and based on them, $d$  can be calculated from the measured $p$ and $f$ by solving Eq. (\ref{eq:model}).
 
-To examine the effect of the dimension and the number of parameters in the model equation, quadratic Eq.(\ref{eq:model_2d(1)}) and cubic Eq. (\ref{eq:model_3d}) were also adapted, and the estimation errors were compared with those of the original model equation.
-\begin{equation}
-   \label{eq:model_2d(1)}
-   f = (b_5p^2 + b_4pd + b_3d^2 + b_2p+b_1d+b_0)d
-   \end{equation}
+To improve the accuracy of length estimation by increasing the number of terms in the model equation, quadratic Eq.(\ref{eq:model_2d(1)}) and cubic Eq. (\ref{eq:model_3d}) were also adapted, and the estimation errors were compared with those of the original model equation.
+\begin{align}
+   f &= (b_5p^2 + b_4pd + b_3d^2 + b_2p+b_1d+b_0)d \label{eq:model_2d(1)} \\
+   f &= (c_4p^3+c_3p^2d+c_2pd^2+c_1d^2+c_0)d \label{eq:model_3d}
+\end{align}
 
-   \begin{equation}
-      \label{eq:model_3d}
-      f = (c_4p^3+c_3p^2d+c_2pd^2+c_1d^2+c_0)d
-  \end{equation}
+% To examine the effect of the dimension and the number of parameters in the model equation, quadratic Eq.(\ref{eq:model_2d(1)}) and cubic Eq. (\ref{eq:model_3d}) were also adapted, and the estimation errors were compared with those of the original model equation.
