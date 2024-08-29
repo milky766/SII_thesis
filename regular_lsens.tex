@@ -16,10 +16,10 @@
 \usepackage{wrapfig}
 \usepackage{layout} 
 \usepackage{multirow}
-
-
-
 \usepackage[absolute,overlay]{textpos} % 絶対位置指定のためのパッケージ
+\usepackage{caption}   % カスタムキャプションを使用するために必要
+\usepackage{balance}
+
 \setlength{\TPHorizModule}{1cm} % 横方向の単位を1cmに設定
 \setlength{\TPVertModule}{1cm}  % 縦方向の単位を1cmに設定
 
@@ -27,6 +27,9 @@
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
+
+
+\newcounter{customfig} % 新しいカウンターを定義
 
 
 %In case you encounter the following error:
@@ -97,8 +100,7 @@ Implementing Stretch Reflex in Musculoskeletal Robots \\Driven by Pneumatic Arti
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-This paper introduces a method to realize stretch reflexes in musculoskeletal robots without length sensors. A pneumatic artificial muscle (PAM) was modeled as a nonlinear spring with a spring constant dependent on deformation and pressure. The dimension of the spring constant had physical bases in prior research, and its coefficients were derived from static tensile tests that measured force and length under a constant pressure. We applied the model to estimate the length of four PAMs with different materials and shapes, verifying the general applicability. When incorporated into an arm driven by antagonistic muscles, the model was proved effective in monitoring the velocity change of PAM length and triggering the stretch reflex, enhancing the robot's adaptability to disturbances. The reflex trajectory with a conventional sensor was well replicated with the model, offering a practical alternative to length sensors. 
-% This paper introduces an experimental model designed to estimate the length of a pneumatic artificial muscle (PAM) from its pressure and force. We model the PAM as a nonlinear spring with a spring constant dependent on deformation and pressure. The dimension of the spring constant has physical bases in prior research, and its coefficients are derived from  static tensile tests that measure force and length under a constant pressure. We apply this model to estimate the length of four PAMs, each varying in materials and shapes. When applied to an arm driven by antagonistic muscles, the model was proved effective in monitoring the velocity changes of PAM length and triggering a stretch reflex, enhancing the robot's adaptability to disturbances.  The model offers a practical alternative to length sensors, contributing to greater flexibility in robotic design.
+    This paper introduces a method to realize stretch reflexes in musculoskeletal robots without length sensors. A pneumatic artificial muscle (PAM) was modeled as a nonlinear spring with a spring constant dependent on deformation and pressure. The dimension of the spring constant had physical bases in prior research, and its coefficients were derived from static tensile tests that measured force and length under a constant pressure. We applied the model to estimate length of four PAMs with different materials and shapes, verifying the general applicability. When incorporated into an arm driven by antagonistic muscles, the model was proved effective in monitoring the velocity change of PAM length and triggering a stretch reflex, enhancing the robot's adaptability to disturbances. The reflex trajectory with a conventional sensor was well replicated with the model, offering a practical alternative to length sensors. 
 \end{abstract}
 
 

@@ -17,7 +17,7 @@
     \caption{Parameters for Stretch Reflex} 
     \begin{tabular}{c|cc}
         \hline
-        PAM &$V_{thr} [\si{mm/s}]$&$ k [\si{GPa\cdot s}]$\\
+        Method &$V_{thr} [\si{mm/s}]$&$ k [\si{GPa\cdot s}]$\\
         \hline \hline
         Model & 70 & 1/800\\
         Fiber Sensor & 25 & 1/300\\
@@ -48,7 +48,7 @@ Generally, PAMs exhibit hysteresis caused by friction, so the data differ betwee
 
 \subsection{Dynamic Length Estimation} 
 Fig. \ref{fig:pam_b_dynamic} and Fig. \ref{fig:pam_d_dynamic} show the dynamic length estimations for PAM-B and PAM-D, respectively.
-By means of the three model equations Eq. (\ref{eq:model}), Eq. (\ref{eq:model_2d(1)}) and Eq. (\ref{eq:model_3d}), with respect to the measurements by the linear encoder, the length estimations were achieved with the maximum errors and the root mean squared errors (RMSEs) as shown in Table \ref{tab:errors}.% With our model, with respect to the measurements by the linear encoder, the length estimation was achieved with maximum errors of 1.72 $\%$ for PAM-A, 1.19 $\%$ for PAM-B, 1.18 $\%$ for PAM-C, and  1.65 $\%$ for PAM-D respectively , and with root mean squared errors of 0.861 $\%$ for PAM-A, 0.653 $\%$ for PAM-B, 0.683 $\%$ for PAM-C, and 0.846 $\%$ for PAM-D respectively. When the model equation was switch to Eq. (\ref{eq:model_2d(1)}),the maximum errors were 1.12 $\%$ for PAM-A, 0.773 $\%$ for PAM-B, 1.01 $\%$ for PAM-C, and 0.755 $\%$ for PAM-D respectively, and root mean squared errors were 0.633 $\%$ for PAM-A, 0.353 $\%$ for PAM-B, 0.548 $\%$ for PAM-C, and 0.435 $\%$ for PAM-D respectively. When the model equation was switch to Eq. (\ref{eq:model_3d}),the maximum errors were 1.22 $\%$ for PAM-A, 1.41 $\%$ for PAM-B, 0.951 $\%$ for PAM-C, and 1.99 $\%$ for PAM-D respectively, and root mean squared errors were 0.516 $\%$ for PAM-A, 0.484 $\%$ for PAM-B, 0.500 $\%$ for PAM-C, and 0.606 $\%$ for PAM-D respectively. 
+By means of the three model equations Eq. (\ref{eq:model}), Eq. (\ref{eq:model_2d(1)}) and Eq. (\ref{eq:model_3d}), with respect to the measurements by the linear encoder, the length estimations were achieved with the maximum errors and the root mean squared errors (RMSEs) as shown in Table \ref{tab:errors}.
    
 \subsection{Reaching Task}
 Table \ref{tab:parameters} shows the parameters for the length estimations of the agonist and antagonist muscles. The considerable difference in the voltage-force slope $q$ between the two PAMs is attributable to the varying sensitivities of the handmade strain gauges. Fig.\ref{fig:reaching_error} displays the length estimation errors of the model and the fiber sensor in reaching task. Since the fiber sensor could only measure the rate of length change and not the absolute length, the estimations of absolute length by the fiber sensor were calibrated to the measurements of the linear encoder at the start of the reaching task. Therefore, it cannot be said that Fig.\ref{fig:reaching_error} is exactly comparing the estimates from the model and the fiber sensor, but it serves as a reference for examining the accuracy of the model against the conventional sensor. The reaching task was performed five times for both the agonist and antagonist muscles. 
@@ -94,7 +94,7 @@ According to the model equation Eq. (\ref{eq:model}), compared with the measurem
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{c|cccc}
     \hline
-    \multirow{2}{*}{Estimation} & \multicolumn{2}{c}{Agonist} & \multicolumn{2}{c}{Antagonist} \\ 
+    \multirow{2}{*}{Method} & \multicolumn{2}{c}{Agonist} & \multicolumn{2}{c}{Antagonist} \\ 
     \cline{2-5}
                                  & Max  & RMSE  & Max   & RMSE  \\ 
     \hline
@@ -114,9 +114,12 @@ According to the model equation Eq. (\ref{eq:model}), compared with the measurem
             \caption{Length Estimation Error in Reaching Task}
             \label{fig:reaching_error}
             \vspace{1em}
+            \addtocounter{figure}{1}
             \includegraphics[width=\columnwidth]{fig/time_vs_angle_model_sensor.pdf}
             \caption{Reflex Angle Similarity between Model and Fiber Sensor}
             \label{fig:reflex_angle}
+            \setcounter{figure}{7}  
+            \renewcommand{\thefigure}{\arabic{figure}}  
         \end{minipage}
         \hfill
         \begin{minipage}[H]{0.48\textwidth} 
@@ -124,13 +127,16 @@ According to the model equation Eq. (\ref{eq:model}), compared with the measurem
             \includegraphics[width=\columnwidth]{fig/20240819_r20_reflex_all_plt.pdf}
             \caption{Dynamic Behavior of Reflex with Model}
             \label{fig:reflex_all}
+            \setcounter{figure}{7}  
+            \renewcommand{\thefigure}{\arabic{figure}} 
         \end{minipage}
     \end{minipage}
 \end{figure*}
-%Accuracy Drop of Length Estimation by Model in Reaching Task
+
 \subsection{Stretch Reflex}
-Fig. \ref{fig:reflex_all} illustrates the dynamic behavior of the reflex with the model. The starting angle of the arm was -36 deg due to the basket's weight of 83.1 g. When the falling mass made an impact, the angle dropped dramatically, creating sudden soar in the voltage signal from the strain gauge and thus in estimated velocity. It went beyond the threshold and triggered the stretch reflex, leading to an increase in pressure in the agonist muscle and a decrease in the antagonist. The arm was then lifted back to the initial position, and after some oscillation, it settled down to a certain angle, holding the mass left in the basket.
+Fig. \ref{fig:reflex_all} illustrates the dynamic behavior of the reflex with the model. With 0 degrees defined as the horizontal position of the arm and the positive rotational direction as clockwise in Fig. \ref{fig:reflex_equipment}, the starting angle was -36 degrees due to the attached basket's weight of 83.1 g. When the falling mass made an impact, the angle dropped dramatically, creating sudden soar in the voltage signal from the strain gauge and thus in estimated velocity. It went beyond the threshold and triggered the stretch reflex, leading to an increase in pressure in the agonist muscle and a decrease in the antagonist. The arm was then lifted back to the initial position, and after some oscillation, it settled down to a certain angle, holding the mass left in the basket.
 
 Fig.\ref{fig:reflex_angle} displays the average and range of angles in 20 trials of the reflexes with the model and the fiber sensor. Since the thresholds and gains were determined experimentally, it is impossible to purely compare the behavior of the arm between the two reflexes, but it can be said that the reflex with the fiber sensor was well replicated with the model.
+
 
 

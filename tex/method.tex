@@ -90,8 +90,8 @@ Since the system was set to 100 $\si{Hz}$, $dt$ was 0.01 $\si{s}$.
 When the impact rapidly stretched the agonist PAM and its velocity exceeded a predetermined threshold, the stretch reflex was induced for 200 $\si{ms}$. The pressure command from the stretch reflex mechanism converged to the goal pressure from a top controller as follows
 \begin{align}
     \label{eq:command_pressure}
-    p_{ago} &= p_{tp - ago} + \Delta p_{ago - exci} - \Delta p_{anta - inhi} \\
-    p_{anta} &= p_{tp - anta} + \Delta p_{anta - exci} - \Delta p_{ago - inhi}
+    p^{ago} &= p^{ago}_{tp} + \Delta p^{ago}_{exci} - \Delta p^{anta}_{inhi} \\
+    p^{anta} &= p^{anta}_{tp} + \Delta p^{anta}_{exci} - \Delta p^{ago}_{inhi}
     \label{eq:command_pressure_2}
 \end{align}
 in which $p_{tp}$ is the goal pressure from the top controller, $\Delta p_{exci}$ is the excitatory pressure from the reflex mechanism, and $ \Delta p_{inhi}$ is the reciprocal inhibition pressure. 
